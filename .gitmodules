@@ -1,0 +1,7 @@
+[submodule "LibAPR"]
+	path = LibAPR
+	url = https://github.com/cheesema/LibAPR.git
+	branch = developCuda
+[submodule "googletest"]
+	path = googletest
+	url = https://github.com/google/googletest.git
