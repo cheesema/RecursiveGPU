@@ -2,6 +2,7 @@
 #include "data_structures/Mesh/MeshData.hpp"
 #include "algorithm/LocalIntensityScale.hpp"
 #include "algorithm/LocalIntensityScaleCuda.h"
+#include "AnalysisData.hpp"
 #include "TestTools.hpp"
 
 namespace {

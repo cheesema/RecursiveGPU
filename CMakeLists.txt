@@ -29,10 +29,13 @@ add_subdirectory("googletest")
 set(GTEST_LIBRARIES gtest)
 include_directories(LibAPR/src)
 
+# Benchmark LIB
+include_directories(APRBench)
+
+
 ##########################################################################
 # APP stuff
 ##########################################################################
 enable_language(CUDA)
 add_executable(benchmark src/main.cpp)
 target_link_libraries(benchmark staticLib ${GTEST_LIBRARIES})
-
