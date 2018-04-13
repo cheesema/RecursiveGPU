@@ -36,6 +36,8 @@ include_directories(APRBench)
 ##########################################################################
 # APP stuff
 ##########################################################################
+
 enable_language(CUDA)
+
 add_executable(benchmark src/main.cpp)
-target_link_libraries(benchmark staticLib ${GTEST_LIBRARIES})
+target_link_libraries(benchmark ${APR_LIB} ${GTEST_LIBRARIES})
