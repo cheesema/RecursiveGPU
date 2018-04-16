@@ -1,0 +1,166 @@
+% Use only LaTeX2e, calling the article.cls class and 12-point type.
+
+\documentclass[9pt,twocolumn]{article}
+
+% Users of the {thebibliography} environment or BibTeX should use the
+% scicite.sty package, downloadable from *Science* at
+% www.sciencemag.org/about/authors/prep/TeX_help/ .
+% This package should properly format in-text
+% reference calls and reference-list numbers.
+
+
+% Use times if you have the font installed; otherwise, comment out the
+% following line.
+
+\usepackage{times}
+
+
+%added by me
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{booktabs}
+
+\usepackage{xr}
+\externaldocument[Supp-]{SuppMat/cheeseman_supp_mat_2017_1}
+\usepackage[]{algorithm2e}
+
+\usepackage[font={footnotesize}]{caption}
+
+%\externaldocument[Supp-]{SuppMat/cheeseman_supp_mat_2017_0}
+
+% The preamble here sets up a lot of new/revised commands and
+% environments.  It's annoying, but please do *not* try to strip these
+% out into a separate .sty file (which could lead to the loss of some
+% information when we convert the file to other formats).  Instead, keep
+% them in the preamble of your main LaTeX source file.
+
+\usepackage{color}
+% The following parameters seem to provide a reasonable page setup.
+
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+
+
+%The next command sets up an environment for the abstract to your paper.
+
+\newenvironment{sciabstract}{%
+	\begin{quote} \bf}
+	{\end{quote}}
+
+
+% If your reference list includes text notes as well as references,
+% include the following line; otherwise, comment it out.
+
+\renewcommand\refname{References and Notes}
+
+% The following lines set up an environment for the last note in the
+% reference list, which commonly includes acknowledgments of funding,
+% help, etc.  It's intended for users of BibTeX or the {thebibliography}
+% environment.  Users who are hand-coding their references at the end
+% using a list environment such as {enumerate} can simply add another
+% item at the end, and it will be numbered automatically.
+
+\newcounter{lastnote}
+\newenvironment{scilastnote}{%
+	\setcounter{lastnote}{\value{enumiv}}%
+	\addtocounter{lastnote}{+1}%
+	\begin{list}%
+		{\arabic{lastnote}.}
+		{\setlength{\leftmargin}{.22in}}
+		{\setlength{\labelsep}{.5em}}}
+	{\end{list}}
+
+
+% Include your paper's title here
+
+%\title{Forget Pixels: Adaptive Particle Representation for processing large fluorescence microscopy data (86char) (90 characters max)\\
+%or\\
+%Reducing the gap between data and information: Adaptive Particle Representation for spatial distributions (91 char)\\
+%or\\
+%Do as eye do: Reducing the gap between (fluorescence) data and information using the Adaptive Particle Representation} 
+
+%\title{The APR: a novel adaptive data representation removing processing bottlenecks when using LSFM data (99 Char)\\\textit{Short Title:}\\ The APR for efficient adaptive processing (41 Char)}
+
+\title{Title here}
+
+
+%Do as eye do -- Adaptive Particle Representation removes storage and processing bottlenecks for fluorescence microscopy images
+%Do as eye do: Reducing the gap between (fluorescence) data and information using the Adaptive Particle Representation} 
+% Do as eye do -- Adaptive Particle Representation removes storage and processing bottlenecks for fluorescence microscopy images 
+% Do as eye do -- Adaptive Particle Representation of fluorescence microscopy images 
+% Do as eye do -- Content-adaptive storage and processing of fluorescence microscopy images
+% Do as eye do -- Adaptive Particle Representation enables content-adaptive storage and processing of fluorescence microscopy images
+
+% Place the author information here.  Please hand-code the contact
+% information and notecalls; do *not* use \footnote commands.  Let the
+% author contact information appear immediately below the author names
+% as shown.  We would also prefer that you don't change the type-size
+% settings shown here.
+
+\author
+{Bevan L. Cheeseman$^{1,2\ast}$, Ulrik G{\"u}nther$^{1,2}$, Mateusz Susik$^{1,2}$,\\ Krzysztof Gonciarz$^{1,2}$, Ivo F. Sbalzarini$^{1,2\ast}$
+	\\
+	\normalsize{$^{1}$ Chair of Scientific Computing for Systems Biology, Faculty of Computer Science,}\\
+	\normalsize{TU Dresden, 01069 Dresden, Germany} \\
+	\normalsize{$^{2}$ Center for Systems Biology Dresden, Max Planck Institute of Molecular }\\
+	\normalsize{Cell Biology and Genetics, Pfotenhauerstr.~108, 01307 Dresden, Germany}\\
+	\\
+	\normalsize{$^\ast$Correspondence to: ivos@mpi-cbg.de, cheesema@mpi-cbg.de}
+}
+
+% Include the date command, but leave its argument blank.
+
+\date{}
+
+
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
+
+
+
+\begin{document} 
+	
+	% Double-space the manuscript.
+	
+	%\baselineskip24pt
+	
+	% Make the title.
+	
+\twocolumn[
+\begin{@twocolumnfalse}
+	\maketitle
+	\begin{abstract}
+       Abstract here\\\\
+	\end{abstract}
+\end{@twocolumnfalse}
+]
+	
+	% In setting up this template for *Science* papers, we've used both
+	% the \section* command and the \paragraph* command for topical
+	% divisions.  Which you use will of course depend on the type of paper
+	% you're writing.  Review Articles tend to have displayed headings, for
+	% which \section* is more appropriate; Research Articles, when they have
+	% formal topical divisions at all, tend to signal them with bold text
+	% that runs into the paragraph, for which \paragraph* is the right
+	% choice.  Either way, use the asterisk (*) modifier, as shown, to
+	% suppress numbering.
+	
+	Intro here
+	
+	\section*{The Adaptive Particle Representation}
+	We illustrate the ideas and concepts behind the APR using a $1D$ Gaussian function as a didactic example. All of the concepts introduced extend to higher dimensions and to general continuous functions, as shown in the Supplement.
+	
+	Cite something	\cite{KartalKoc2015marsreview}
+	
+
+	\bibliography{bib_file}
+	
+	
+\end{document}
