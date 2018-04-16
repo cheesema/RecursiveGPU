@@ -32,12 +32,19 @@ include_directories(LibAPR/src)
 # Benchmark LIB
 include_directories(APRBench)
 
+find_package(HDF5 REQUIRED)
 
 ##########################################################################
 # APP stuff
 ##########################################################################
 
+set(CMAKE_CUDA_STANDARD 14)
+set(CMAKE_CUDA_FLAGS "--cudart shared -g -lineinfo -Xptxas -O3,-v -use_fast_math -DAPR_USE_CUDA")
 enable_language(CUDA)
+include_directories(${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
+
 
 add_executable(benchmark src/main.cpp)
-target_link_libraries(benchmark ${APR_LIB} ${GTEST_LIBRARIES})
+target_link_libraries(benchmark ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES}  )
+add_executable(ConvTest src/ConvTest.cpp src/Conv.cu)
+target_link_libraries(ConvTest ${APR_LIB} ${GTEST_LIBRARIES})
