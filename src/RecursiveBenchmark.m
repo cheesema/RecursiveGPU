@@ -7,12 +7,12 @@ analysis_root='/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/build/';
 figure(1);
 clf;
 hold on;
-plotData([analysis_root, 'asdf.h5'], 1);
-% plotData([analysis_root, 'asdfOld.h5'], 1);
+plotData([analysis_root, 'asdfParticulator.h5'], 1);
 
 function plotData(fileName, plotNum)
     ad = load_analysis_data(fileName);
-
+    ad.numOfRepetitions
+    
     % Test options
     numOfRep = ad.numOfRepetitions;
     skipNumOfFirstElements=ad.numOfRepetitionsToSkip;
@@ -21,7 +21,7 @@ function plotData(fileName, plotNum)
     [gpuData, gpuErr]=getMeanMeasurements(ad.GpuDeviceTimeFull, numOfRep, skipNumOfFirstElements);
 
     x=ad.ticksValue;
-    
+    cpuData./gpuData
     figure(plotNum);
     format_figure(gcf);
     hold on;
@@ -42,6 +42,7 @@ function plotData(fileName, plotNum)
     ylabel(ad.yTitle');            
     
     title(ad.plotTitle');
+    print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
     
 end
 
