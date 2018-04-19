@@ -56,10 +56,10 @@ namespace {
 
             unsigned int numberOfTests = 15 + 1;
             for (size_t d = 0; d < numberOfTests; ++d) {
-                size_t yLen = 1024;
+                size_t yLen = 16;
                 size_t zLen = 1024;
-                size_t xStartValue = 128;
-                size_t deltaStep = 128;
+                size_t xStartValue = 16;
+                size_t deltaStep = 16;
                 size_t xLen = xStartValue + deltaStep * d;
 
                 std::cout << "\n\n========================= " << d+1 << "/" << numberOfTests << " ===============\n";
@@ -107,7 +107,7 @@ namespace {
         ad.add_string_data("yTitle", "Time in seconds");
         ad.add_float_data("xNormalizer", 1024*1024*1024);
         ad.add_float_data("numberOfDecimalPointsX", 1);
-        ad.add_string_data("plotTitle", "recursive filter Titan X vs 10 x Xeon(R) @2.60GHz");
+        ad.add_string_data("plotTitle", "Local Instensity Scale off=2 Titan X vs 10 x Xeon(R) @2.60GHz");
 
         // Filter parameters
         const int offset = 2;
@@ -174,7 +174,7 @@ namespace {
         ad.add_string_data("yTitle", "Time in seconds");
         ad.add_float_data("xNormalizer", 1024*1024*1024);
         ad.add_float_data("numberOfDecimalPointsX", 1);
-        ad.add_string_data("plotTitle", "recursive filter Titan X vs 10 x Xeon(R) @2.60GHz");
+        ad.add_string_data("plotTitle", "Local Instensity Scale off=6 Titan X vs 10 x Xeon(R) @2.60GHz");
 
         // Filter parameters
         const int offset = 6;

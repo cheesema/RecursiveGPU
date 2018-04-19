@@ -15,10 +15,12 @@ plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1);
 
 function plotData(fileName, plotNum)
     ad = load_analysis_data(fileName);
+    ad
+    
 %     ad.numOfRepetitions
 %     ad.GpuDeviceTimeYdir
-%     ad.GpuDeviceTimeXdir
-%     ad.GpuDeviceTimeZdir
+    ad.GpuDeviceTimeXdir
+    ad.GpuDeviceTimeZdir
     
     % Test options
     numOfRep = ad.numOfRepetitions;
@@ -28,9 +30,9 @@ function plotData(fileName, plotNum)
     [gpuData, gpuErr]=getMeanMeasurements(ad.GpuDeviceTimeFull, numOfRep, skipNumOfFirstElements);
 
     x=ad.ticksValue;
-    size(cpuData)
-    size(gpuData)
-    cpuData./gpuData
+%     size(cpuData)
+%     size(gpuData)
+%     cpuData./gpuData
     
     figure(plotNum);
 %     format_figure(gcf);

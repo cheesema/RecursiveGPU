@@ -22,6 +22,7 @@ set(APR_BUILD_STATIC_LIB ON CACHE BOOL "" FORCE)
 set(APR_BUILD_SHARED_LIB OFF CACHE BOOL "" FORCE)
 set(APR_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(APR_USE_CUDA ON CACHE BOOL "" FORCE)
+set(APR_BENCHMARK ON CACHE BOOL "" FORCE)
 add_subdirectory("LibAPR")
 set(APR_LIB staticLib)
 include_directories(LibAPR/src)
@@ -71,6 +72,10 @@ set(CMAKE_CUDA_STANDARD 14)
 set(CMAKE_CUDA_FLAGS "--cudart shared -g -lineinfo -Xptxas -O3,-v -use_fast_math -DAPR_USE_CUDA")
 enable_language(CUDA)
 include_directories(${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
+
+# enable BENCHMARK
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DAPR_BENCHMARK")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DAPR_BENCHMARK")
 
 # SRC/BIN for app goes here
 add_executable(benchmark src/main.cpp)
