@@ -117,7 +117,7 @@ namespace {
 
             unsigned int numberOfTests = 15 + 1;
             for (size_t d = 0; d < numberOfTests; ++d) {
-                size_t yLen = 1024;
+                size_t yLen = 16;
                 size_t zLen = 1024;
                 size_t xStartValue = 16;
                 size_t deltaStep = 16;
@@ -184,7 +184,7 @@ namespace {
 
             unsigned int numberOfTests = 15 + 1;
             for (size_t d = 0; d < numberOfTests; ++d) {
-                size_t yLen = 1024;
+                size_t yLen = 16;
                 size_t zLen = 1024;
                 size_t xStartValue = 16;
                 size_t deltaStep = 16;

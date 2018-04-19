@@ -9,15 +9,17 @@ clf;
 hold on;
 format_figure(xx);
 plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1);
+plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1);
 % plotData([analysis_root, 'asdfFalcon.h5'], 1);
 
 
 function plotData(fileName, plotNum)
     ad = load_analysis_data(fileName);
-    ad.numOfRepetitions
-    ad.GpuDeviceTimeYdir
-    ad.GpuDeviceTimeXdir
-    ad.GpuDeviceTimeZdir
+    ad
+%     ad.numOfRepetitions
+%     ad.GpuDeviceTimeYdir
+%     ad.GpuDeviceTimeXdir
+%     ad.GpuDeviceTimeZdir
     
     % Test options
     numOfRep = ad.numOfRepetitions;
@@ -27,7 +29,10 @@ function plotData(fileName, plotNum)
     [gpuData, gpuErr]=getMeanMeasurements(ad.GpuDeviceTimeFull, numOfRep, skipNumOfFirstElements);
 
     x=ad.ticksValue;
+    size(cpuData)
+    size(gpuData)
     cpuData./gpuData
+    
     figure(plotNum);
 %     format_figure(gcf);
     hold on;
@@ -48,7 +53,7 @@ function plotData(fileName, plotNum)
     ylabel(ad.yTitle');            
     
     title(ad.plotTitle');
-    print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
+%     print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
     
 end
 
