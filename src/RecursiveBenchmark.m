@@ -5,22 +5,28 @@ addpath('/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/APRBench/Matlab
 analysis_root='/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/build/';
 
 xx=figure(1);
-clf;
+% clf;
 hold on;
-format_figure(xx);
-plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1);
-plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1);
-% plotData([analysis_root, 'asdfFalcon.h5'], 1);
+% format_figure(xx);
+plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
+plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
+title('Local Intensity Scale Titan X vs 10 x Xeon(R)@2.6GHz')
+l = legend({'CPU offset=2', 'GPU offset=2', 'CPU offset = 6', 'GPU offset = 6'});
+l.Location = 'northwest';
+l.Box = 'off';
+l.FontSize = 20;
+print('localIntensityScaleCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 
+xx=figure(2);
+% clf;
+hold on;
+% format_figure(xx);
+plotData([analysis_root, 'BenchmarkBsplineTest.h5'], 2, 0);
+title('Recursive filter Titan X vs 10 x Xeon(R)@2.6GHz')
+print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 
-function plotData(fileName, plotNum)
+function plotData(fileName, plotNum, colorShift)
     ad = load_analysis_data(fileName);
-    ad
-    
-%     ad.numOfRepetitions
-%     ad.GpuDeviceTimeYdir
-    ad.GpuDeviceTimeXdir
-    ad.GpuDeviceTimeZdir
     
     % Test options
     numOfRep = ad.numOfRepetitions;
@@ -30,17 +36,11 @@ function plotData(fileName, plotNum)
     [gpuData, gpuErr]=getMeanMeasurements(ad.GpuDeviceTimeFull, numOfRep, skipNumOfFirstElements);
 
     x=ad.ticksValue;
-%     size(cpuData)
-%     size(gpuData)
-%     cpuData./gpuData
     
-    figure(plotNum);
-%     format_figure(gcf);
-    hold on;
     cm_type = 'parula(5)';
     cm = colormap(cm_type)
-    errorbar(x, cpuData,cpuErr, 'color', cm(3,:));
-    errorbar(x, gpuData,gpuErr, 'color', cm(1,:));
+    errorbar(x, cpuData,cpuErr, 'color', cm(3 + colorShift,:));
+    errorbar(x, gpuData,gpuErr, 'color', cm(1 + colorShift,:));
     
 %     axis([0 Inf 0 Inf]);    
     set(gca,'XTick', ad.ticksValue)
@@ -53,9 +53,7 @@ function plotData(fileName, plotNum)
     xlabel(ad.xTitle');
     ylabel(ad.yTitle');            
     
-    title(ad.plotTitle');
-%     print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
-    
+    title(ad.plotTitle');    
 end
 
 function [out, maxErr]=getMeanMeasurements(data, noOfRep, skipSteps)
