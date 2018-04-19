@@ -4,10 +4,13 @@ addpath('/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/APRBench/Matlab
 % name='asdf.h5';
 analysis_root='/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/build/';
 
-figure(1);
+xx=figure(1);
 clf;
 hold on;
-plotData([analysis_root, 'asdfParticulator.h5'], 1);
+format_figure(xx);
+plotData([analysis_root, 'asdfLongTest.h5'], 1);
+plotData([analysis_root, 'asdfFalcon.h5'], 1);
+
 
 function plotData(fileName, plotNum)
     ad = load_analysis_data(fileName);
@@ -23,7 +26,7 @@ function plotData(fileName, plotNum)
     x=ad.ticksValue;
     cpuData./gpuData
     figure(plotNum);
-    format_figure(gcf);
+%     format_figure(gcf);
     hold on;
     cm_type = 'parula(5)';
     cm = colormap(cm_type)
