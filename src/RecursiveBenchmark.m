@@ -8,13 +8,16 @@ xx=figure(1);
 clf;
 hold on;
 format_figure(xx);
-plotData([analysis_root, 'asdfLongTest.h5'], 1);
-plotData([analysis_root, 'asdfFalcon.h5'], 1);
+plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1);
+% plotData([analysis_root, 'asdfFalcon.h5'], 1);
 
 
 function plotData(fileName, plotNum)
     ad = load_analysis_data(fileName);
     ad.numOfRepetitions
+    ad.GpuDeviceTimeYdir
+    ad.GpuDeviceTimeXdir
+    ad.GpuDeviceTimeZdir
     
     % Test options
     numOfRep = ad.numOfRepetitions;
