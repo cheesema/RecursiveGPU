@@ -5,9 +5,9 @@ addpath('/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/APRBench/Matlab
 analysis_root='/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/build/';
 
 xx=figure(1);
-% clf;
+clf;
 hold on;
-% format_figure(xx);
+format_figure(xx);
 plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
 plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
 title('Local Intensity Scale Titan X vs 10 x Xeon(R)@2.6GHz')
@@ -18,9 +18,9 @@ l.FontSize = 20;
 print('localIntensityScaleCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 
 xx=figure(2);
-% clf;
+clf;
 hold on;
-% format_figure(xx);
+format_figure(xx);
 plotData([analysis_root, 'BenchmarkBsplineTest.h5'], 2, 0);
 title('Recursive filter Titan X vs 10 x Xeon(R)@2.6GHz')
 print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
