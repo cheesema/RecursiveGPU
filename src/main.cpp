@@ -225,7 +225,7 @@ namespace {
                     timer.stop_timer();
                 }
 
-//                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
+                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.001), 0);
             }
         }
 
