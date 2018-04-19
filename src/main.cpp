@@ -66,28 +66,28 @@ namespace {
                 ad.add_float_data("ticksValue", xLen * zLen * yLen * sizeof(ImgType));
                 MeshData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
                 std::cout << "MESH: " << m << std::endl;
+                MeshData<ImgType> mCpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION CPU: " << i + 1 << "/" << numOfRepetitions << "\n";
                     // Calculate bspline on CPU
                     ComputeGradient cg;
                     timer.start_timer("CpuTime");
-                    MeshData<ImgType> mCpu(m, true);
                     cg.bspline_filt_rec_y(mCpu, lambda, tolerance);
                     cg.bspline_filt_rec_x(mCpu, lambda, tolerance);
                     cg.bspline_filt_rec_z(mCpu, lambda, tolerance);
                     timer.stop_timer();
                 }
 
+                MeshData<ImgType> mGpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION GPU: " << i + 1 << "/" << numOfRepetitions << "\n";
 
                     // Calculate bspline on GPU
-                    MeshData<ImgType> mGpu(m, true);
                     timer.start_timer("GpuTimeWithMemTransfer");
                     cudaFilterBsplineFull(mGpu, lambda, tolerance, BSPLINE_ALL_DIR);
                     timer.stop_timer();
                 }
-
+//                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
             }
         }
 
@@ -133,11 +133,12 @@ namespace {
                 ad.add_float_data("ticksValue", xLen * zLen * yLen * sizeof(ImgType));
                 MeshData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
                 std::cout << "MESH: " << m << std::endl;
+
+                MeshData<ImgType> mCpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION CPU: " << i + 1 << "/" << numOfRepetitions << "\n";
                     // Calculate bspline on CPU
                     LocalIntensityScale lis;
-                    MeshData<ImgType> mCpu(m, true);
                     timer.start_timer("CpuTime");
                     lis.calc_sat_mean_y(mCpu, offset);
                     lis.calc_sat_mean_x(mCpu, offset);
@@ -145,16 +146,17 @@ namespace {
                     timer.stop_timer();
                 }
 
+                MeshData<ImgType> mGpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION GPU: " << i + 1 << "/" << numOfRepetitions << "\n";
 
                     // Calculate bspline on GPU
-                    MeshData<ImgType> mGpu(m, true);
                     timer.start_timer("GpuTimeWithMemTransfer");
                     calcMean(mGpu, offset);
                     timer.stop_timer();
                 }
 
+//                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
             }
         }
 
@@ -200,11 +202,12 @@ namespace {
                 ad.add_float_data("ticksValue", xLen * zLen * yLen * sizeof(ImgType));
                 MeshData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
                 std::cout << "MESH: " << m << std::endl;
+
+                MeshData<ImgType> mCpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION CPU: " << i + 1 << "/" << numOfRepetitions << "\n";
                     // Calculate bspline on CPU
                     LocalIntensityScale lis;
-                    MeshData<ImgType> mCpu(m, true);
                     timer.start_timer("CpuTime");
                     lis.calc_sat_mean_y(mCpu, offset);
                     lis.calc_sat_mean_x(mCpu, offset);
@@ -212,15 +215,17 @@ namespace {
                     timer.stop_timer();
                 }
 
+                MeshData<ImgType> mGpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION GPU: " << i + 1 << "/" << numOfRepetitions << "\n";
 
                     // Calculate bspline on GPU
-                    MeshData<ImgType> mGpu(m, true);
                     timer.start_timer("GpuTimeWithMemTransfer");
                     calcMean(mGpu, offset);
                     timer.stop_timer();
                 }
+
+//                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
             }
         }
 
