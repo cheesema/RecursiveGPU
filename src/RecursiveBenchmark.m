@@ -15,7 +15,6 @@ plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1);
 
 function plotData(fileName, plotNum)
     ad = load_analysis_data(fileName);
-    ad
 %     ad.numOfRepetitions
 %     ad.GpuDeviceTimeYdir
 %     ad.GpuDeviceTimeXdir

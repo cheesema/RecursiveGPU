@@ -1,3 +1,9 @@
+
+// Needed for APRTimer and AnalysisData
+#ifndef APR_BENCHMARK
+#define APR_BENCHMARK
+#endif
+
 #include "misc/APRTimer.hpp"
 #include "AnalysisData.hpp"
 
