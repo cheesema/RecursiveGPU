@@ -11,7 +11,10 @@ git clone --recursive https://github.com/cheesema/RecursiveGPU.git
 cd RecursiveGPU
 mkdir build
 cd build
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=Release  ..
+cmake -DCMAKE_BUILD_TYPE=Release  ..
 make -j 8
+
+./benchmark
 
 ```
