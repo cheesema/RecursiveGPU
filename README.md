@@ -15,6 +15,6 @@ cmake -DCMAKE_BUILD_TYPE=Release  ..
 cmake -DCMAKE_BUILD_TYPE=Release  ..
 make -j 8
 
-./benchmark
+./benchmark | tee testOutput.txt
 
 ```
