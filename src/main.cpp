@@ -29,6 +29,7 @@ namespace {
         ad.add_float_data("xNormalizer", 1024*1024*1024);
         ad.add_float_data("numberOfDecimalPointsX", 1);
         ad.add_string_data("plotTitle", "recursive filter Titan X vs 10 x Xeon(R) @2.60GHz");
+        
         // Filter parameters
         const float lambda = 3;
         const float tolerance = 0.0001;
