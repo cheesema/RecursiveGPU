@@ -8,8 +8,13 @@ xx=figure(1);
 clf;
 hold on;
 format_figure(xx);
-plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
-plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
+% plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
+% plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
+plotData(['../BenchmarkResults/v100/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
+plotData(['../BenchmarkResults/v100/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
+plotData(['../BenchmarkResults/Particulator/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
+plotData(['../BenchmarkResults/Particulator/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
+
 title('Local Intensity Scale Titan X vs 10 x Xeon(R)@2.6GHz')
 l = legend({'CPU offset=2', 'GPU offset=2', 'CPU offset = 6', 'GPU offset = 6'});
 l.Location = 'northwest';
@@ -21,19 +26,18 @@ xx=figure(2);
 clf;
 hold on;
 format_figure(xx);
-plotData([analysis_root, 'BenchmarkBsplineTest.h5'], 2, 0);
+plotData(['../BenchmarkResults/v100/', 'BenchmarkBsplineTest.h5'], 0, 0);
+
+plotData(['../BenchmarkResults/Particulator/', 'BenchmarkBsplineTest.h5'], 1, 1);
+
 title('Recursive filter Titan X vs 10 x Xeon(R)@2.6GHz')
 print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 
 function plotData(fileName, plotNum, colorShift)
     ad = load_analysis_data(fileName);
     
-    % Test options
-    numOfRep = ad.numOfRepetitions;
-    skipNumOfFirstElements=ad.numOfRepetitionsToSkip;
-    
-    [cpuData, cpuErr]=getMeanMeasurements(ad.CpuTime, numOfRep, skipNumOfFirstElements);
-    [gpuData, gpuErr]=getMeanMeasurements(ad.GpuDeviceTimeFull, numOfRep, skipNumOfFirstElements);
+    [cpuData, cpuErr]=getMeanMeasurements(ad.CpuTime, ad.numOfRepetitions, ad.numOfRepetitionsToSkip);
+    [gpuData, gpuErr]=getMeanMeasurements(ad.GpuDeviceTimeFull, ad.numOfRepetitions, ad.numOfRepetitionsToSkip);
 
     x=ad.ticksValue;
     

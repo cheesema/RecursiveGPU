@@ -81,7 +81,7 @@ void computeConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &ker
 #define TILE_WIDTH 16
 #define w (TILE_WIDTH + Mask_width - 1)
 #define clamp(x) (min(max((x), 0.0), 1.0))
-
+// 2D version (?)
 __global__ void convolution(float *I, const float* __restrict__ M, float *P,
                             int channels, int width, int height) {
     __shared__ float N_ds[w][w];
@@ -131,7 +131,7 @@ __global__ void convolution(float *I, const float* __restrict__ M, float *P,
 #define         W           (TILE_WIDTH + MASK_WIDTH - 1)
 
 /**
- * GPU 2D Convolution using shared memory
+ * GPU 3D Convolution using shared memory
  */
 __global__ void convolution(float *I, float* M, float *P, int width, int height, int depth)
 {

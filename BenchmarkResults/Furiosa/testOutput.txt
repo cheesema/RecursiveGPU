@@ -1,0 +1,3923 @@
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from BenchmarkBsplineTest
+[ RUN      ] BenchmarkBsplineTest.FULL
+OpenMP reports 40 threads available.
+
+
+========================= 1/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/128/1024 vSize:134217728 vCapacity:134217728 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/128/1024 vSize:134217728 vCapacity:134217728 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.126047 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.120399 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.124269 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.119241 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.123237 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 2.264093 seconds
+Number of blocks  (x/y/z):  4096/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.015091 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.009678 seconds
+Number of blocks  (x/y/z):  1/16/128
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.010774 seconds
+GpuDeviceTimeFull took 0.035565 seconds
+GpuMemTransferDeviceToHost took 0.073903 seconds
+GpuTimeWithMemTransfer took 2.37694 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.070124 seconds
+Number of blocks  (x/y/z):  4096/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.014105 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.009806 seconds
+Number of blocks  (x/y/z):  1/16/128
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.010879 seconds
+GpuDeviceTimeFull took 0.034810 seconds
+GpuMemTransferDeviceToHost took 0.073158 seconds
+GpuTimeWithMemTransfer took 0.181352 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.069978 seconds
+Number of blocks  (x/y/z):  4096/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.014256 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.009789 seconds
+Number of blocks  (x/y/z):  1/16/128
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.010838 seconds
+GpuDeviceTimeFull took 0.034904 seconds
+GpuMemTransferDeviceToHost took 0.075350 seconds
+GpuTimeWithMemTransfer took 0.183513 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.069990 seconds
+Number of blocks  (x/y/z):  4096/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.014282 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.009820 seconds
+Number of blocks  (x/y/z):  1/16/128
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.010869 seconds
+GpuDeviceTimeFull took 0.034990 seconds
+GpuMemTransferDeviceToHost took 0.072948 seconds
+GpuTimeWithMemTransfer took 0.181189 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.069349 seconds
+Number of blocks  (x/y/z):  4096/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.014321 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.009783 seconds
+Number of blocks  (x/y/z):  1/16/128
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.010808 seconds
+GpuDeviceTimeFull took 0.034930 seconds
+GpuMemTransferDeviceToHost took 0.073092 seconds
+GpuTimeWithMemTransfer took 0.180637 seconds
+
+
+========================= 2/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/256/1024 vSize:268435456 vCapacity:268435456 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/256/1024 vSize:268435456 vCapacity:268435456 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.242191 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.228614 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.233155 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.240127 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.238497 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.136741 seconds
+Number of blocks  (x/y/z):  8192/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.028203 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.019625 seconds
+Number of blocks  (x/y/z):  1/16/256
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.021341 seconds
+GpuDeviceTimeFull took 0.069188 seconds
+GpuMemTransferDeviceToHost took 0.145177 seconds
+GpuTimeWithMemTransfer took 0.357557 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.141122 seconds
+Number of blocks  (x/y/z):  8192/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.028263 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.019630 seconds
+Number of blocks  (x/y/z):  1/16/256
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.021565 seconds
+GpuDeviceTimeFull took 0.069475 seconds
+GpuMemTransferDeviceToHost took 0.145652 seconds
+GpuTimeWithMemTransfer took 0.362664 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.140814 seconds
+Number of blocks  (x/y/z):  8192/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.028303 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.019665 seconds
+Number of blocks  (x/y/z):  1/16/256
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.021376 seconds
+GpuDeviceTimeFull took 0.069366 seconds
+GpuMemTransferDeviceToHost took 0.148604 seconds
+GpuTimeWithMemTransfer took 0.365196 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.148419 seconds
+Number of blocks  (x/y/z):  8192/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.028299 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.019614 seconds
+Number of blocks  (x/y/z):  1/16/256
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.021570 seconds
+GpuDeviceTimeFull took 0.069502 seconds
+GpuMemTransferDeviceToHost took 0.147902 seconds
+GpuTimeWithMemTransfer took 0.372254 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.147145 seconds
+Number of blocks  (x/y/z):  8192/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.028270 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.019659 seconds
+Number of blocks  (x/y/z):  1/16/256
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.021538 seconds
+GpuDeviceTimeFull took 0.069484 seconds
+GpuMemTransferDeviceToHost took 0.148284 seconds
+GpuTimeWithMemTransfer took 0.371344 seconds
+
+
+========================= 3/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/384/1024 vSize:402653184 vCapacity:402653184 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/384/1024 vSize:402653184 vCapacity:402653184 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.36126 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.364234 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.369689 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.366707 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.367809 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.175010 seconds
+Number of blocks  (x/y/z):  12288/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.041546 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.029852 seconds
+Number of blocks  (x/y/z):  1/16/384
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.032572 seconds
+GpuDeviceTimeFull took 0.103988 seconds
+GpuMemTransferDeviceToHost took 0.130001 seconds
+GpuTimeWithMemTransfer took 0.415439 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.202401 seconds
+Number of blocks  (x/y/z):  12288/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.041480 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.029886 seconds
+Number of blocks  (x/y/z):  1/16/384
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.032439 seconds
+GpuDeviceTimeFull took 0.103825 seconds
+GpuMemTransferDeviceToHost took 0.130492 seconds
+GpuTimeWithMemTransfer took 0.443134 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.202830 seconds
+Number of blocks  (x/y/z):  12288/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.041419 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.029906 seconds
+Number of blocks  (x/y/z):  1/16/384
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.032744 seconds
+GpuDeviceTimeFull took 0.104088 seconds
+GpuMemTransferDeviceToHost took 0.127552 seconds
+GpuTimeWithMemTransfer took 0.4409 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.201294 seconds
+Number of blocks  (x/y/z):  12288/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.041483 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.029828 seconds
+Number of blocks  (x/y/z):  1/16/384
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.033080 seconds
+GpuDeviceTimeFull took 0.104409 seconds
+GpuMemTransferDeviceToHost took 0.129888 seconds
+GpuTimeWithMemTransfer took 0.442012 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.201485 seconds
+Number of blocks  (x/y/z):  12288/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.041453 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.029763 seconds
+Number of blocks  (x/y/z):  1/16/384
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.033119 seconds
+GpuDeviceTimeFull took 0.104351 seconds
+GpuMemTransferDeviceToHost took 0.129900 seconds
+GpuTimeWithMemTransfer took 0.442157 seconds
+
+
+========================= 4/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/512/1024 vSize:536870912 vCapacity:536870912 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/512/1024 vSize:536870912 vCapacity:536870912 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.478238 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.486948 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.481491 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.488114 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.490792 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.228100 seconds
+Number of blocks  (x/y/z):  16384/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.055588 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.040381 seconds
+Number of blocks  (x/y/z):  1/16/512
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.043687 seconds
+GpuDeviceTimeFull took 0.139674 seconds
+GpuMemTransferDeviceToHost took 0.170679 seconds
+GpuTimeWithMemTransfer took 0.544892 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.267616 seconds
+Number of blocks  (x/y/z):  16384/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.055521 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.040395 seconds
+Number of blocks  (x/y/z):  1/16/512
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.043851 seconds
+GpuDeviceTimeFull took 0.139786 seconds
+GpuMemTransferDeviceToHost took 0.172745 seconds
+GpuTimeWithMemTransfer took 0.586568 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.271398 seconds
+Number of blocks  (x/y/z):  16384/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.055599 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.040284 seconds
+Number of blocks  (x/y/z):  1/16/512
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.043957 seconds
+GpuDeviceTimeFull took 0.139858 seconds
+GpuMemTransferDeviceToHost took 0.171708 seconds
+GpuTimeWithMemTransfer took 0.589375 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.269089 seconds
+Number of blocks  (x/y/z):  16384/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.055585 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.040379 seconds
+Number of blocks  (x/y/z):  1/16/512
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.043634 seconds
+GpuDeviceTimeFull took 0.139615 seconds
+GpuMemTransferDeviceToHost took 0.172656 seconds
+GpuTimeWithMemTransfer took 0.587768 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.271501 seconds
+Number of blocks  (x/y/z):  16384/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.055690 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.040172 seconds
+Number of blocks  (x/y/z):  1/16/512
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.044025 seconds
+GpuDeviceTimeFull took 0.139905 seconds
+GpuMemTransferDeviceToHost took 0.170182 seconds
+GpuTimeWithMemTransfer took 0.588028 seconds
+
+
+========================= 5/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/640/1024 vSize:671088640 vCapacity:671088640 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/640/1024 vSize:671088640 vCapacity:671088640 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.627025 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.63212 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.629248 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.631759 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.634368 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.319687 seconds
+Number of blocks  (x/y/z):  20480/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.068875 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.051047 seconds
+Number of blocks  (x/y/z):  1/16/640
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.057212 seconds
+GpuDeviceTimeFull took 0.177154 seconds
+GpuMemTransferDeviceToHost took 0.362792 seconds
+GpuTimeWithMemTransfer took 0.866081 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.370331 seconds
+Number of blocks  (x/y/z):  20480/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.068852 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.051134 seconds
+Number of blocks  (x/y/z):  1/16/640
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.057049 seconds
+GpuDeviceTimeFull took 0.177055 seconds
+GpuMemTransferDeviceToHost took 0.360892 seconds
+GpuTimeWithMemTransfer took 0.914697 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.373504 seconds
+Number of blocks  (x/y/z):  20480/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.068857 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.051014 seconds
+Number of blocks  (x/y/z):  1/16/640
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.056546 seconds
+GpuDeviceTimeFull took 0.176437 seconds
+GpuMemTransferDeviceToHost took 0.367270 seconds
+GpuTimeWithMemTransfer took 0.923633 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.373501 seconds
+Number of blocks  (x/y/z):  20480/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.068834 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.050982 seconds
+Number of blocks  (x/y/z):  1/16/640
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.057008 seconds
+GpuDeviceTimeFull took 0.176843 seconds
+GpuMemTransferDeviceToHost took 0.365323 seconds
+GpuTimeWithMemTransfer took 0.922089 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.373254 seconds
+Number of blocks  (x/y/z):  20480/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.068868 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.050695 seconds
+Number of blocks  (x/y/z):  1/16/640
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.056457 seconds
+GpuDeviceTimeFull took 0.176039 seconds
+GpuMemTransferDeviceToHost took 0.365339 seconds
+GpuTimeWithMemTransfer took 0.921052 seconds
+
+
+========================= 6/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/768/1024 vSize:805306368 vCapacity:805306368 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/768/1024 vSize:805306368 vCapacity:805306368 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.750945 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.772051 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.773173 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.772055 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.778729 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.350610 seconds
+Number of blocks  (x/y/z):  24576/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.083109 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.062230 seconds
+Number of blocks  (x/y/z):  1/16/768
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.068419 seconds
+GpuDeviceTimeFull took 0.213779 seconds
+GpuMemTransferDeviceToHost took 0.257266 seconds
+GpuTimeWithMemTransfer took 0.828096 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.417125 seconds
+Number of blocks  (x/y/z):  24576/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.083207 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.061768 seconds
+Number of blocks  (x/y/z):  1/16/768
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.067771 seconds
+GpuDeviceTimeFull took 0.212767 seconds
+GpuMemTransferDeviceToHost took 0.255111 seconds
+GpuTimeWithMemTransfer took 0.891412 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.415196 seconds
+Number of blocks  (x/y/z):  24576/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.082902 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.062050 seconds
+Number of blocks  (x/y/z):  1/16/768
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.066945 seconds
+GpuDeviceTimeFull took 0.211915 seconds
+GpuMemTransferDeviceToHost took 0.252804 seconds
+GpuTimeWithMemTransfer took 0.886329 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.407727 seconds
+Number of blocks  (x/y/z):  24576/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.083146 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.062166 seconds
+Number of blocks  (x/y/z):  1/16/768
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.067080 seconds
+GpuDeviceTimeFull took 0.212411 seconds
+GpuMemTransferDeviceToHost took 0.254063 seconds
+GpuTimeWithMemTransfer took 0.880593 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.409539 seconds
+Number of blocks  (x/y/z):  24576/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.082798 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.061951 seconds
+Number of blocks  (x/y/z):  1/16/768
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.068220 seconds
+GpuDeviceTimeFull took 0.212987 seconds
+GpuMemTransferDeviceToHost took 0.253252 seconds
+GpuTimeWithMemTransfer took 0.882189 seconds
+
+
+========================= 7/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/896/1024 vSize:939524096 vCapacity:939524096 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/896/1024 vSize:939524096 vCapacity:939524096 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.76455 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.760935 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.75767 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.754578 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.749593 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.402531 seconds
+Number of blocks  (x/y/z):  28672/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.096335 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.073322 seconds
+Number of blocks  (x/y/z):  1/16/896
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.080480 seconds
+GpuDeviceTimeFull took 0.250154 seconds
+GpuMemTransferDeviceToHost took 0.294411 seconds
+GpuTimeWithMemTransfer took 0.953546 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.469537 seconds
+Number of blocks  (x/y/z):  28672/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.096135 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.072725 seconds
+Number of blocks  (x/y/z):  1/16/896
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.080567 seconds
+GpuDeviceTimeFull took 0.249445 seconds
+GpuMemTransferDeviceToHost took 0.294289 seconds
+GpuTimeWithMemTransfer took 1.01968 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.470200 seconds
+Number of blocks  (x/y/z):  28672/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.096206 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.072913 seconds
+Number of blocks  (x/y/z):  1/16/896
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.080049 seconds
+GpuDeviceTimeFull took 0.249187 seconds
+GpuMemTransferDeviceToHost took 0.299781 seconds
+GpuTimeWithMemTransfer took 1.02558 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.469476 seconds
+Number of blocks  (x/y/z):  28672/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.096228 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.072976 seconds
+Number of blocks  (x/y/z):  1/16/896
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.080465 seconds
+GpuDeviceTimeFull took 0.249686 seconds
+GpuMemTransferDeviceToHost took 0.296250 seconds
+GpuTimeWithMemTransfer took 1.02182 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.469458 seconds
+Number of blocks  (x/y/z):  28672/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.096224 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.073147 seconds
+Number of blocks  (x/y/z):  1/16/896
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.079640 seconds
+GpuDeviceTimeFull took 0.249029 seconds
+GpuMemTransferDeviceToHost took 0.294470 seconds
+GpuTimeWithMemTransfer took 1.01937 seconds
+
+
+========================= 8/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1024/1024 vSize:1073741824 vCapacity:1073741824 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1024/1024 vSize:1073741824 vCapacity:1073741824 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.02428 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.02844 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.03199 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.03284 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.02616 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.457297 seconds
+Number of blocks  (x/y/z):  32768/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.107375 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.080411 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.086826 seconds
+GpuDeviceTimeFull took 0.274631 seconds
+GpuMemTransferDeviceToHost took 0.335751 seconds
+GpuTimeWithMemTransfer took 1.07412 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.543703 seconds
+Number of blocks  (x/y/z):  32768/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.107330 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.080311 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.087798 seconds
+GpuDeviceTimeFull took 0.275457 seconds
+GpuMemTransferDeviceToHost took 0.335512 seconds
+GpuTimeWithMemTransfer took 1.16108 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.542507 seconds
+Number of blocks  (x/y/z):  32768/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.107258 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.080584 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.088096 seconds
+GpuDeviceTimeFull took 0.275957 seconds
+GpuMemTransferDeviceToHost took 0.335745 seconds
+GpuTimeWithMemTransfer took 1.16062 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.542721 seconds
+Number of blocks  (x/y/z):  32768/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.107671 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.080619 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.087785 seconds
+GpuDeviceTimeFull took 0.276093 seconds
+GpuMemTransferDeviceToHost took 0.335593 seconds
+GpuTimeWithMemTransfer took 1.16082 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.541252 seconds
+Number of blocks  (x/y/z):  32768/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.107385 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.081037 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.087735 seconds
+GpuDeviceTimeFull took 0.276175 seconds
+GpuMemTransferDeviceToHost took 0.335237 seconds
+GpuTimeWithMemTransfer took 1.15907 seconds
+
+
+========================= 9/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1152/1024 vSize:1207959552 vCapacity:1207959552 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1152/1024 vSize:1207959552 vCapacity:1207959552 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.1635 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.16156 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.16609 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.15868 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.17087 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.584874 seconds
+Number of blocks  (x/y/z):  36864/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.120322 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.092595 seconds
+Number of blocks  (x/y/z):  1/16/1152
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.103657 seconds
+GpuDeviceTimeFull took 0.316594 seconds
+GpuMemTransferDeviceToHost took 0.730589 seconds
+GpuTimeWithMemTransfer took 1.6385 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.728317 seconds
+Number of blocks  (x/y/z):  36864/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.120231 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.092490 seconds
+Number of blocks  (x/y/z):  1/16/1152
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.104365 seconds
+GpuDeviceTimeFull took 0.317107 seconds
+GpuMemTransferDeviceToHost took 0.726503 seconds
+GpuTimeWithMemTransfer took 1.77834 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.708680 seconds
+Number of blocks  (x/y/z):  36864/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.120310 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.092826 seconds
+Number of blocks  (x/y/z):  1/16/1152
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.103848 seconds
+GpuDeviceTimeFull took 0.317004 seconds
+GpuMemTransferDeviceToHost took 0.713714 seconds
+GpuTimeWithMemTransfer took 1.74583 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.711238 seconds
+Number of blocks  (x/y/z):  36864/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.120153 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.092881 seconds
+Number of blocks  (x/y/z):  1/16/1152
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.103298 seconds
+GpuDeviceTimeFull took 0.316352 seconds
+GpuMemTransferDeviceToHost took 0.703548 seconds
+GpuTimeWithMemTransfer took 1.73755 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.697143 seconds
+Number of blocks  (x/y/z):  36864/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.120456 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.092920 seconds
+Number of blocks  (x/y/z):  1/16/1152
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.104107 seconds
+GpuDeviceTimeFull took 0.317502 seconds
+GpuMemTransferDeviceToHost took 0.712122 seconds
+GpuTimeWithMemTransfer took 1.7332 seconds
+
+
+========================= 10/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1280/1024 vSize:1342177280 vCapacity:1342177280 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1280/1024 vSize:1342177280 vCapacity:1342177280 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.30007 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.28578 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.29631 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.29588 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.29246 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.669683 seconds
+Number of blocks  (x/y/z):  40960/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.134107 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.104924 seconds
+Number of blocks  (x/y/z):  1/16/1280
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.112165 seconds
+GpuDeviceTimeFull took 0.351220 seconds
+GpuMemTransferDeviceToHost took 0.460503 seconds
+GpuTimeWithMemTransfer took 1.48783 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.789974 seconds
+Number of blocks  (x/y/z):  40960/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.134044 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.104982 seconds
+Number of blocks  (x/y/z):  1/16/1280
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.112284 seconds
+GpuDeviceTimeFull took 0.351335 seconds
+GpuMemTransferDeviceToHost took 0.461652 seconds
+GpuTimeWithMemTransfer took 1.60936 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.788215 seconds
+Number of blocks  (x/y/z):  40960/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.134341 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.104732 seconds
+Number of blocks  (x/y/z):  1/16/1280
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.111861 seconds
+GpuDeviceTimeFull took 0.350958 seconds
+GpuMemTransferDeviceToHost took 0.456579 seconds
+GpuTimeWithMemTransfer took 1.60221 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.795538 seconds
+Number of blocks  (x/y/z):  40960/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.134220 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.105110 seconds
+Number of blocks  (x/y/z):  1/16/1280
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.113183 seconds
+GpuDeviceTimeFull took 0.352535 seconds
+GpuMemTransferDeviceToHost took 0.457661 seconds
+GpuTimeWithMemTransfer took 1.61214 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.772291 seconds
+Number of blocks  (x/y/z):  40960/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.134219 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.104842 seconds
+Number of blocks  (x/y/z):  1/16/1280
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.112199 seconds
+GpuDeviceTimeFull took 0.351296 seconds
+GpuMemTransferDeviceToHost took 0.454407 seconds
+GpuTimeWithMemTransfer took 1.58438 seconds
+
+
+========================= 11/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1408/1024 vSize:1476395008 vCapacity:1476395008 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1408/1024 vSize:1476395008 vCapacity:1476395008 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.44539 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.4206 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.42583 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.4197 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.42679 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.740844 seconds
+Number of blocks  (x/y/z):  45056/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.147034 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.114567 seconds
+Number of blocks  (x/y/z):  1/16/1408
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.125311 seconds
+GpuDeviceTimeFull took 0.386933 seconds
+GpuMemTransferDeviceToHost took 0.851579 seconds
+GpuTimeWithMemTransfer took 1.98579 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.822346 seconds
+Number of blocks  (x/y/z):  45056/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.146875 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.115931 seconds
+Number of blocks  (x/y/z):  1/16/1408
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.126714 seconds
+GpuDeviceTimeFull took 0.389540 seconds
+GpuMemTransferDeviceToHost took 0.791957 seconds
+GpuTimeWithMemTransfer took 2.01027 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.805193 seconds
+Number of blocks  (x/y/z):  45056/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.147347 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.114314 seconds
+Number of blocks  (x/y/z):  1/16/1408
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.126283 seconds
+GpuDeviceTimeFull took 0.387962 seconds
+GpuMemTransferDeviceToHost took 0.802862 seconds
+GpuTimeWithMemTransfer took 2.00034 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.810294 seconds
+Number of blocks  (x/y/z):  45056/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.146932 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.114270 seconds
+Number of blocks  (x/y/z):  1/16/1408
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.125900 seconds
+GpuDeviceTimeFull took 0.387121 seconds
+GpuMemTransferDeviceToHost took 0.806229 seconds
+GpuTimeWithMemTransfer took 2.00796 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.806623 seconds
+Number of blocks  (x/y/z):  45056/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.147247 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.114335 seconds
+Number of blocks  (x/y/z):  1/16/1408
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.124941 seconds
+GpuDeviceTimeFull took 0.386542 seconds
+GpuMemTransferDeviceToHost took 0.813951 seconds
+GpuTimeWithMemTransfer took 2.01147 seconds
+
+
+========================= 12/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1536/1024 vSize:1610612736 vCapacity:1610612736 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1536/1024 vSize:1610612736 vCapacity:1610612736 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.5951 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.59747 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.59407 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.58647 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.59331 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.746308 seconds
+Number of blocks  (x/y/z):  49152/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.160880 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.124322 seconds
+Number of blocks  (x/y/z):  1/16/1536
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.135378 seconds
+GpuDeviceTimeFull took 0.420602 seconds
+GpuMemTransferDeviceToHost took 0.860323 seconds
+GpuTimeWithMemTransfer took 2.03158 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.883813 seconds
+Number of blocks  (x/y/z):  49152/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.160759 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.125695 seconds
+Number of blocks  (x/y/z):  1/16/1536
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.134593 seconds
+GpuDeviceTimeFull took 0.421067 seconds
+GpuMemTransferDeviceToHost took 0.863297 seconds
+GpuTimeWithMemTransfer took 2.17251 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.886045 seconds
+Number of blocks  (x/y/z):  49152/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.160597 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.125888 seconds
+Number of blocks  (x/y/z):  1/16/1536
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.135289 seconds
+GpuDeviceTimeFull took 0.421795 seconds
+GpuMemTransferDeviceToHost took 0.860144 seconds
+GpuTimeWithMemTransfer took 2.1723 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.887469 seconds
+Number of blocks  (x/y/z):  49152/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.161088 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.125188 seconds
+Number of blocks  (x/y/z):  1/16/1536
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.135259 seconds
+GpuDeviceTimeFull took 0.421555 seconds
+GpuMemTransferDeviceToHost took 0.858932 seconds
+GpuTimeWithMemTransfer took 2.17227 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.887530 seconds
+Number of blocks  (x/y/z):  49152/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.161141 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.125342 seconds
+Number of blocks  (x/y/z):  1/16/1536
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.135166 seconds
+GpuDeviceTimeFull took 0.421671 seconds
+GpuMemTransferDeviceToHost took 0.862009 seconds
+GpuTimeWithMemTransfer took 2.17552 seconds
+
+
+========================= 13/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1664/1024 vSize:1744830464 vCapacity:1744830464 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1664/1024 vSize:1744830464 vCapacity:1744830464 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.71111 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.70915 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.72813 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.72156 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.69955 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.771229 seconds
+Number of blocks  (x/y/z):  53248/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.173542 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.137347 seconds
+Number of blocks  (x/y/z):  1/16/1664
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.149462 seconds
+GpuDeviceTimeFull took 0.460369 seconds
+GpuMemTransferDeviceToHost took 0.921869 seconds
+GpuTimeWithMemTransfer took 2.1578 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.924793 seconds
+Number of blocks  (x/y/z):  53248/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.173790 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.137253 seconds
+Number of blocks  (x/y/z):  1/16/1664
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.150116 seconds
+GpuDeviceTimeFull took 0.461178 seconds
+GpuMemTransferDeviceToHost took 0.925441 seconds
+GpuTimeWithMemTransfer took 2.31572 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.948559 seconds
+Number of blocks  (x/y/z):  53248/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.173587 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.136938 seconds
+Number of blocks  (x/y/z):  1/16/1664
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.150850 seconds
+GpuDeviceTimeFull took 0.461394 seconds
+GpuMemTransferDeviceToHost took 0.944042 seconds
+GpuTimeWithMemTransfer took 2.35831 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.962418 seconds
+Number of blocks  (x/y/z):  53248/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.174071 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.137121 seconds
+Number of blocks  (x/y/z):  1/16/1664
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.149677 seconds
+GpuDeviceTimeFull took 0.460887 seconds
+GpuMemTransferDeviceToHost took 0.943140 seconds
+GpuTimeWithMemTransfer took 2.37076 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.954471 seconds
+Number of blocks  (x/y/z):  53248/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.173561 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.137360 seconds
+Number of blocks  (x/y/z):  1/16/1664
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.149898 seconds
+GpuDeviceTimeFull took 0.460838 seconds
+GpuMemTransferDeviceToHost took 0.944089 seconds
+GpuTimeWithMemTransfer took 2.36371 seconds
+
+
+========================= 14/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1792/1024 vSize:1879048192 vCapacity:1879048192 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1792/1024 vSize:1879048192 vCapacity:1879048192 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.83615 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.83443 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.82471 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.83163 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.83413 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.871766 seconds
+Number of blocks  (x/y/z):  57344/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.187569 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.149044 seconds
+Number of blocks  (x/y/z):  1/16/1792
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.160816 seconds
+GpuDeviceTimeFull took 0.497448 seconds
+GpuMemTransferDeviceToHost took 1.027299 seconds
+GpuTimeWithMemTransfer took 2.40087 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 1.012654 seconds
+Number of blocks  (x/y/z):  57344/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.187798 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.149019 seconds
+Number of blocks  (x/y/z):  1/16/1792
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.161322 seconds
+GpuDeviceTimeFull took 0.498160 seconds
+GpuMemTransferDeviceToHost took 1.019702 seconds
+GpuTimeWithMemTransfer took 2.53483 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 1.013975 seconds
+Number of blocks  (x/y/z):  57344/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.187651 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.148770 seconds
+Number of blocks  (x/y/z):  1/16/1792
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.160462 seconds
+GpuDeviceTimeFull took 0.496903 seconds
+GpuMemTransferDeviceToHost took 1.025244 seconds
+GpuTimeWithMemTransfer took 2.54044 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 1.012668 seconds
+Number of blocks  (x/y/z):  57344/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.187476 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.148899 seconds
+Number of blocks  (x/y/z):  1/16/1792
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.161631 seconds
+GpuDeviceTimeFull took 0.498025 seconds
+GpuMemTransferDeviceToHost took 1.018522 seconds
+GpuTimeWithMemTransfer took 2.53355 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.989913 seconds
+Number of blocks  (x/y/z):  57344/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.187670 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.149168 seconds
+Number of blocks  (x/y/z):  1/16/1792
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.161072 seconds
+GpuDeviceTimeFull took 0.497929 seconds
+GpuMemTransferDeviceToHost took 1.003529 seconds
+GpuTimeWithMemTransfer took 2.49568 seconds
+
+
+========================= 15/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1920/1024 vSize:2013265920 vCapacity:2013265920 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1920/1024 vSize:2013265920 vCapacity:2013265920 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.0775 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.096 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.07878 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.06212 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.07075 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 0.891772 seconds
+Number of blocks  (x/y/z):  61440/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.200459 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.161703 seconds
+Number of blocks  (x/y/z):  1/16/1920
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.176480 seconds
+GpuDeviceTimeFull took 0.538662 seconds
+GpuMemTransferDeviceToHost took 0.632832 seconds
+GpuTimeWithMemTransfer took 2.06763 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 1.065625 seconds
+Number of blocks  (x/y/z):  61440/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.200453 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.161729 seconds
+Number of blocks  (x/y/z):  1/16/1920
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.177684 seconds
+GpuDeviceTimeFull took 0.539886 seconds
+GpuMemTransferDeviceToHost took 0.636921 seconds
+GpuTimeWithMemTransfer took 2.24676 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 1.071811 seconds
+Number of blocks  (x/y/z):  61440/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.200607 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.161983 seconds
+Number of blocks  (x/y/z):  1/16/1920
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.176588 seconds
+GpuDeviceTimeFull took 0.539200 seconds
+GpuMemTransferDeviceToHost took 0.634747 seconds
+GpuTimeWithMemTransfer took 2.25007 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 1.065257 seconds
+Number of blocks  (x/y/z):  61440/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.200581 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.161370 seconds
+Number of blocks  (x/y/z):  1/16/1920
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.176754 seconds
+GpuDeviceTimeFull took 0.538725 seconds
+GpuMemTransferDeviceToHost took 0.634682 seconds
+GpuTimeWithMemTransfer took 2.24298 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuMemTransferHostToDevice took 1.063008 seconds
+Number of blocks  (x/y/z):  61440/1/1
+Number of threads (x/y/z): 32/1/1
+GpuDeviceTimeYdir took 0.201154 seconds
+Number of blocks  (x/y/z):  1/16/1024
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeXdir took 0.161672 seconds
+Number of blocks  (x/y/z):  1/16/1920
+Number of threads (x/y/z): 1/64/1
+GpuDeviceTimeZdir took 0.177345 seconds
+GpuDeviceTimeFull took 0.540192 seconds
+GpuMemTransferDeviceToHost took 0.634591 seconds
+GpuTimeWithMemTransfer took 2.2421 seconds
+Data Analysis File Writing Complete to [BenchmarkBsplineTest.h5] file
+[       OK ] BenchmarkBsplineTest.FULL (470297 ms)
+[----------] 1 test from BenchmarkBsplineTest (470297 ms total)
+
+[----------] 2 tests from BenchmarkLocalIntensityScaleTest
+[ RUN      ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_2
+OpenMP reports 40 threads available.
+
+
+========================= 1/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/128/1024 vSize:134217728 vCapacity:134217728 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/128/1024 vSize:134217728 vCapacity:134217728 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.0716742 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.0730776 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.073195 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.0733559 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.0729518 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.063456 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.005414 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004491 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005193 seconds
+GpuDeviceTimeFull took 0.015112 seconds
+cuda: transfer data from device and freeing memory took 0.043905 seconds
+GpuTimeWithMemTransfer took 0.122565 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.070703 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.005436 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004489 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005235 seconds
+GpuDeviceTimeFull took 0.015171 seconds
+cuda: transfer data from device and freeing memory took 0.043893 seconds
+GpuTimeWithMemTransfer took 0.129813 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.071204 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.005431 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004487 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005236 seconds
+GpuDeviceTimeFull took 0.015167 seconds
+cuda: transfer data from device and freeing memory took 0.044462 seconds
+GpuTimeWithMemTransfer took 0.130878 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.070096 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.005440 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004483 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005213 seconds
+GpuDeviceTimeFull took 0.015149 seconds
+cuda: transfer data from device and freeing memory took 0.044695 seconds
+GpuTimeWithMemTransfer took 0.129984 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.070204 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.005430 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004486 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005211 seconds
+GpuDeviceTimeFull took 0.015139 seconds
+cuda: transfer data from device and freeing memory took 0.044389 seconds
+GpuTimeWithMemTransfer took 0.129776 seconds
+
+
+========================= 2/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/256/1024 vSize:268435456 vCapacity:268435456 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/256/1024 vSize:268435456 vCapacity:268435456 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.144737 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.147024 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.146489 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.147442 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.147666 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.114797 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.010776 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009134 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010464 seconds
+GpuDeviceTimeFull took 0.030389 seconds
+cuda: transfer data from device and freeing memory took 0.085824 seconds
+GpuTimeWithMemTransfer took 0.231061 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.138358 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.010796 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009123 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010568 seconds
+GpuDeviceTimeFull took 0.030500 seconds
+cuda: transfer data from device and freeing memory took 0.086919 seconds
+GpuTimeWithMemTransfer took 0.255833 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.138098 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.010798 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009116 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010463 seconds
+GpuDeviceTimeFull took 0.030391 seconds
+cuda: transfer data from device and freeing memory took 0.087230 seconds
+GpuTimeWithMemTransfer took 0.255763 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.138615 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.010795 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009118 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010521 seconds
+GpuDeviceTimeFull took 0.030448 seconds
+cuda: transfer data from device and freeing memory took 0.086673 seconds
+GpuTimeWithMemTransfer took 0.255781 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.137676 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.010794 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009106 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010490 seconds
+GpuDeviceTimeFull took 0.030404 seconds
+cuda: transfer data from device and freeing memory took 0.087264 seconds
+GpuTimeWithMemTransfer took 0.255389 seconds
+
+
+========================= 3/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/384/1024 vSize:402653184 vCapacity:402653184 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/384/1024 vSize:402653184 vCapacity:402653184 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.218582 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.2208 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.219843 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.221725 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.219695 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.173499 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016154 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.014032 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016476 seconds
+GpuDeviceTimeFull took 0.046677 seconds
+cuda: transfer data from device and freeing memory took 0.128460 seconds
+GpuTimeWithMemTransfer took 0.348686 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.208158 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016158 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013996 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016498 seconds
+GpuDeviceTimeFull took 0.046667 seconds
+cuda: transfer data from device and freeing memory took 0.129501 seconds
+GpuTimeWithMemTransfer took 0.384373 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.207641 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016155 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013997 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016377 seconds
+GpuDeviceTimeFull took 0.046543 seconds
+cuda: transfer data from device and freeing memory took 0.129192 seconds
+GpuTimeWithMemTransfer took 0.38342 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.206347 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016148 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013989 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016384 seconds
+GpuDeviceTimeFull took 0.046536 seconds
+cuda: transfer data from device and freeing memory took 0.128525 seconds
+GpuTimeWithMemTransfer took 0.381471 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.208311 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016155 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.014000 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016451 seconds
+GpuDeviceTimeFull took 0.046621 seconds
+cuda: transfer data from device and freeing memory took 0.128671 seconds
+GpuTimeWithMemTransfer took 0.383646 seconds
+
+
+========================= 4/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/512/1024 vSize:536870912 vCapacity:536870912 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/512/1024 vSize:536870912 vCapacity:536870912 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.291131 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.292558 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.293741 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.29483 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.292565 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.232984 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.022565 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018881 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021503 seconds
+GpuDeviceTimeFull took 0.062964 seconds
+cuda: transfer data from device and freeing memory took 0.286153 seconds
+GpuTimeWithMemTransfer took 0.582151 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.278700 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.021519 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018880 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021332 seconds
+GpuDeviceTimeFull took 0.061744 seconds
+cuda: transfer data from device and freeing memory took 0.292265 seconds
+GpuTimeWithMemTransfer took 0.632771 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.283725 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.021512 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018921 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021289 seconds
+GpuDeviceTimeFull took 0.061735 seconds
+cuda: transfer data from device and freeing memory took 0.286325 seconds
+GpuTimeWithMemTransfer took 0.631831 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.278512 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.021498 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018899 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021152 seconds
+GpuDeviceTimeFull took 0.061563 seconds
+cuda: transfer data from device and freeing memory took 0.285706 seconds
+GpuTimeWithMemTransfer took 0.625834 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.278227 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.021509 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018868 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021373 seconds
+GpuDeviceTimeFull took 0.061762 seconds
+cuda: transfer data from device and freeing memory took 0.286146 seconds
+GpuTimeWithMemTransfer took 0.626179 seconds
+
+
+========================= 5/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/640/1024 vSize:671088640 vCapacity:671088640 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/640/1024 vSize:671088640 vCapacity:671088640 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.360786 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.365545 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.363067 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.367208 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.362964 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.287970 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.026858 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023946 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027624 seconds
+GpuDeviceTimeFull took 0.078442 seconds
+cuda: transfer data from device and freeing memory took 0.355546 seconds
+GpuTimeWithMemTransfer took 0.722015 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.345603 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.026864 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023853 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027551 seconds
+GpuDeviceTimeFull took 0.078281 seconds
+cuda: transfer data from device and freeing memory took 0.372241 seconds
+GpuTimeWithMemTransfer took 0.796178 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.369120 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.026877 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023881 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027632 seconds
+GpuDeviceTimeFull took 0.078406 seconds
+cuda: transfer data from device and freeing memory took 0.374953 seconds
+GpuTimeWithMemTransfer took 0.822528 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.362280 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.026866 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023880 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027511 seconds
+GpuDeviceTimeFull took 0.078270 seconds
+cuda: transfer data from device and freeing memory took 0.365357 seconds
+GpuTimeWithMemTransfer took 0.805951 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.353720 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.026872 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023894 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027544 seconds
+GpuDeviceTimeFull took 0.078323 seconds
+cuda: transfer data from device and freeing memory took 0.368499 seconds
+GpuTimeWithMemTransfer took 0.800606 seconds
+
+
+========================= 6/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/768/1024 vSize:805306368 vCapacity:805306368 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/768/1024 vSize:805306368 vCapacity:805306368 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.435093 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.437708 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.435047 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.437549 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.437027 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.345202 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032220 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028757 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.033222 seconds
+GpuDeviceTimeFull took 0.094214 seconds
+cuda: transfer data from device and freeing memory took 0.425975 seconds
+GpuTimeWithMemTransfer took 0.865444 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.415133 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032236 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028780 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.033157 seconds
+GpuDeviceTimeFull took 0.094187 seconds
+cuda: transfer data from device and freeing memory took 0.426955 seconds
+GpuTimeWithMemTransfer took 0.936337 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.415193 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032217 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028820 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.033217 seconds
+GpuDeviceTimeFull took 0.094268 seconds
+cuda: transfer data from device and freeing memory took 0.427528 seconds
+GpuTimeWithMemTransfer took 0.937041 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.415189 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032227 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028798 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.033008 seconds
+GpuDeviceTimeFull took 0.094047 seconds
+cuda: transfer data from device and freeing memory took 0.428330 seconds
+GpuTimeWithMemTransfer took 0.937612 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.415240 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032234 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028765 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.033127 seconds
+GpuDeviceTimeFull took 0.094141 seconds
+cuda: transfer data from device and freeing memory took 0.428173 seconds
+GpuTimeWithMemTransfer took 0.937602 seconds
+
+
+========================= 7/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/896/1024 vSize:939524096 vCapacity:939524096 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/896/1024 vSize:939524096 vCapacity:939524096 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.50645 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.509056 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.509395 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.508566 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.511167 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.403468 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.037600 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033920 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.040130 seconds
+GpuDeviceTimeFull took 0.111664 seconds
+cuda: transfer data from device and freeing memory took 0.497403 seconds
+GpuTimeWithMemTransfer took 1.01261 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.484025 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.037598 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033921 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.040402 seconds
+GpuDeviceTimeFull took 0.111934 seconds
+cuda: transfer data from device and freeing memory took 0.500578 seconds
+GpuTimeWithMemTransfer took 1.09658 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.484613 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.037606 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033892 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.040019 seconds
+GpuDeviceTimeFull took 0.111531 seconds
+cuda: transfer data from device and freeing memory took 0.498138 seconds
+GpuTimeWithMemTransfer took 1.09433 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.484736 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.037586 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033941 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.039814 seconds
+GpuDeviceTimeFull took 0.111354 seconds
+cuda: transfer data from device and freeing memory took 0.500004 seconds
+GpuTimeWithMemTransfer took 1.09614 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.484696 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.037583 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033878 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.040055 seconds
+GpuDeviceTimeFull took 0.111529 seconds
+cuda: transfer data from device and freeing memory took 0.498590 seconds
+GpuTimeWithMemTransfer took 1.09487 seconds
+
+
+========================= 8/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1024/1024 vSize:1073741824 vCapacity:1073741824 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1024/1024 vSize:1073741824 vCapacity:1073741824 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.578331 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.582758 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.58603 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.581287 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.583603 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.452545 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.042952 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039321 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.045188 seconds
+GpuDeviceTimeFull took 0.127474 seconds
+cuda: transfer data from device and freeing memory took 0.559093 seconds
+GpuTimeWithMemTransfer took 1.13916 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.564639 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.042991 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039114 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044773 seconds
+GpuDeviceTimeFull took 0.126890 seconds
+cuda: transfer data from device and freeing memory took 0.562349 seconds
+GpuTimeWithMemTransfer took 1.25393 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.566581 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.042938 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039360 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044768 seconds
+GpuDeviceTimeFull took 0.127079 seconds
+cuda: transfer data from device and freeing memory took 0.565800 seconds
+GpuTimeWithMemTransfer took 1.25951 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.571750 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.042942 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039110 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044682 seconds
+GpuDeviceTimeFull took 0.126748 seconds
+cuda: transfer data from device and freeing memory took 0.570205 seconds
+GpuTimeWithMemTransfer took 1.26877 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.570941 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.042986 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039061 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.045008 seconds
+GpuDeviceTimeFull took 0.127067 seconds
+cuda: transfer data from device and freeing memory took 0.569897 seconds
+GpuTimeWithMemTransfer took 1.26795 seconds
+
+
+========================= 9/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1152/1024 vSize:1207959552 vCapacity:1207959552 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1152/1024 vSize:1207959552 vCapacity:1207959552 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.652705 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.655741 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.655403 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.655235 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.657243 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.531801 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048440 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044313 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.053328 seconds
+GpuDeviceTimeFull took 0.146095 seconds
+cuda: transfer data from device and freeing memory took 0.643548 seconds
+GpuTimeWithMemTransfer took 1.32149 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.638255 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048371 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044323 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.054125 seconds
+GpuDeviceTimeFull took 0.146833 seconds
+cuda: transfer data from device and freeing memory took 0.641770 seconds
+GpuTimeWithMemTransfer took 1.42691 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.644816 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048407 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044391 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.053992 seconds
+GpuDeviceTimeFull took 0.146802 seconds
+cuda: transfer data from device and freeing memory took 0.621528 seconds
+GpuTimeWithMemTransfer took 1.41319 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.643901 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048363 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044271 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.053113 seconds
+GpuDeviceTimeFull took 0.145760 seconds
+cuda: transfer data from device and freeing memory took 0.631573 seconds
+GpuTimeWithMemTransfer took 1.42128 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.630612 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048315 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044100 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.053838 seconds
+GpuDeviceTimeFull took 0.146265 seconds
+cuda: transfer data from device and freeing memory took 0.632942 seconds
+GpuTimeWithMemTransfer took 1.40986 seconds
+
+
+========================= 10/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1280/1024 vSize:1342177280 vCapacity:1342177280 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1280/1024 vSize:1342177280 vCapacity:1342177280 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.722094 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.725004 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.724244 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.725044 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.727485 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.584396 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.053769 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049770 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056912 seconds
+GpuDeviceTimeFull took 0.160464 seconds
+cuda: transfer data from device and freeing memory took 0.697156 seconds
+GpuTimeWithMemTransfer took 1.44206 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.718044 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.053867 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049710 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056978 seconds
+GpuDeviceTimeFull took 0.160567 seconds
+cuda: transfer data from device and freeing memory took 0.708830 seconds
+GpuTimeWithMemTransfer took 1.58748 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.716494 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.053827 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049692 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056798 seconds
+GpuDeviceTimeFull took 0.160332 seconds
+cuda: transfer data from device and freeing memory took 0.700803 seconds
+GpuTimeWithMemTransfer took 1.57768 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.715611 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.053796 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049806 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.057039 seconds
+GpuDeviceTimeFull took 0.160655 seconds
+cuda: transfer data from device and freeing memory took 0.705366 seconds
+GpuTimeWithMemTransfer took 1.58168 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.718749 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.053729 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049761 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056696 seconds
+GpuDeviceTimeFull took 0.160199 seconds
+cuda: transfer data from device and freeing memory took 0.710557 seconds
+GpuTimeWithMemTransfer took 1.58956 seconds
+
+
+========================= 11/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1408/1024 vSize:1476395008 vCapacity:1476395008 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1408/1024 vSize:1476395008 vCapacity:1476395008 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.794785 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.801663 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.799758 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.79958 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.79989 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.654039 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.059248 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054638 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.063740 seconds
+GpuDeviceTimeFull took 0.177639 seconds
+cuda: transfer data from device and freeing memory took 0.783941 seconds
+GpuTimeWithMemTransfer took 1.61567 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.774917 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.059222 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054799 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.064063 seconds
+GpuDeviceTimeFull took 0.178099 seconds
+cuda: transfer data from device and freeing memory took 0.771653 seconds
+GpuTimeWithMemTransfer took 1.72472 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.789029 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.059184 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054775 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.064110 seconds
+GpuDeviceTimeFull took 0.178083 seconds
+cuda: transfer data from device and freeing memory took 0.782748 seconds
+GpuTimeWithMemTransfer took 1.74992 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.806541 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.059239 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054673 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.063582 seconds
+GpuDeviceTimeFull took 0.177508 seconds
+cuda: transfer data from device and freeing memory took 0.799364 seconds
+GpuTimeWithMemTransfer took 1.78346 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.803516 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.059257 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054648 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.063258 seconds
+GpuDeviceTimeFull took 0.177179 seconds
+cuda: transfer data from device and freeing memory took 0.792228 seconds
+GpuTimeWithMemTransfer took 1.77297 seconds
+
+
+========================= 12/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1536/1024 vSize:1610612736 vCapacity:1610612736 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1536/1024 vSize:1610612736 vCapacity:1610612736 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.869723 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.87171 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.872767 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.872556 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.873073 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.720738 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.064692 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059775 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.067950 seconds
+GpuDeviceTimeFull took 0.192433 seconds
+cuda: transfer data from device and freeing memory took 0.876291 seconds
+GpuTimeWithMemTransfer took 1.78953 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.867761 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.064808 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059673 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.067996 seconds
+GpuDeviceTimeFull took 0.192492 seconds
+cuda: transfer data from device and freeing memory took 0.879670 seconds
+GpuTimeWithMemTransfer took 1.93997 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.873430 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.064724 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059814 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.068124 seconds
+GpuDeviceTimeFull took 0.192679 seconds
+cuda: transfer data from device and freeing memory took 0.875334 seconds
+GpuTimeWithMemTransfer took 1.94149 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.872950 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.064758 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059987 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.068151 seconds
+GpuDeviceTimeFull took 0.192911 seconds
+cuda: transfer data from device and freeing memory took 0.871129 seconds
+GpuTimeWithMemTransfer took 1.93703 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.877898 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.064763 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059931 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.067718 seconds
+GpuDeviceTimeFull took 0.192425 seconds
+cuda: transfer data from device and freeing memory took 0.877076 seconds
+GpuTimeWithMemTransfer took 1.94745 seconds
+
+
+========================= 13/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1664/1024 vSize:1744830464 vCapacity:1744830464 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1664/1024 vSize:1744830464 vCapacity:1744830464 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.940054 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.941213 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.94074 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.9416 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.940449 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.793393 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.070192 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065657 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.077296 seconds
+GpuDeviceTimeFull took 0.213160 seconds
+cuda: transfer data from device and freeing memory took 0.943448 seconds
+GpuTimeWithMemTransfer took 1.95005 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.948435 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.070130 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065442 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.076956 seconds
+GpuDeviceTimeFull took 0.212543 seconds
+cuda: transfer data from device and freeing memory took 0.959503 seconds
+GpuTimeWithMemTransfer took 2.12053 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.926500 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.070117 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065685 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.077033 seconds
+GpuDeviceTimeFull took 0.212850 seconds
+cuda: transfer data from device and freeing memory took 0.947467 seconds
+GpuTimeWithMemTransfer took 2.08687 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.929443 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.070088 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065585 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.077400 seconds
+GpuDeviceTimeFull took 0.213090 seconds
+cuda: transfer data from device and freeing memory took 0.947238 seconds
+GpuTimeWithMemTransfer took 2.08982 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.929581 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.070108 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065418 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.076668 seconds
+GpuDeviceTimeFull took 0.212208 seconds
+cuda: transfer data from device and freeing memory took 0.946317 seconds
+GpuTimeWithMemTransfer took 2.08818 seconds
+
+
+========================= 14/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1792/1024 vSize:1879048192 vCapacity:1879048192 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1792/1024 vSize:1879048192 vCapacity:1879048192 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.01279 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.01869 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.0175 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.01827 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.01705 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.785951 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.075612 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.070885 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.083113 seconds
+GpuDeviceTimeFull took 0.229625 seconds
+cuda: transfer data from device and freeing memory took 0.583937 seconds
+GpuTimeWithMemTransfer took 1.59957 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.955795 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.075569 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071260 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.082546 seconds
+GpuDeviceTimeFull took 0.229389 seconds
+cuda: transfer data from device and freeing memory took 0.590896 seconds
+GpuTimeWithMemTransfer took 1.77615 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.961983 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.075594 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071205 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.083212 seconds
+GpuDeviceTimeFull took 0.230025 seconds
+cuda: transfer data from device and freeing memory took 0.586109 seconds
+GpuTimeWithMemTransfer took 1.77817 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.983795 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.075532 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071133 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.083154 seconds
+GpuDeviceTimeFull took 0.229834 seconds
+cuda: transfer data from device and freeing memory took 0.584968 seconds
+GpuTimeWithMemTransfer took 1.79865 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.985596 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.075673 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071195 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.083063 seconds
+GpuDeviceTimeFull took 0.229944 seconds
+cuda: transfer data from device and freeing memory took 0.585338 seconds
+GpuTimeWithMemTransfer took 1.80095 seconds
+
+
+========================= 15/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1920/1024 vSize:2013265920 vCapacity:2013265920 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1920/1024 vSize:2013265920 vCapacity:2013265920 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.09685 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.10118 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.09756 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.10225 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.0953 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.874389 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.081125 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076800 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.087491 seconds
+GpuDeviceTimeFull took 0.245431 seconds
+cuda: transfer data from device and freeing memory took 0.626477 seconds
+GpuTimeWithMemTransfer took 1.74636 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 1.045995 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.080994 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076949 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.087028 seconds
+GpuDeviceTimeFull took 0.244986 seconds
+cuda: transfer data from device and freeing memory took 0.626019 seconds
+GpuTimeWithMemTransfer took 1.91705 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 1.046181 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.081095 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076777 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.087105 seconds
+GpuDeviceTimeFull took 0.244993 seconds
+cuda: transfer data from device and freeing memory took 0.637058 seconds
+GpuTimeWithMemTransfer took 1.9283 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 1.051604 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.081046 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076621 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.087404 seconds
+GpuDeviceTimeFull took 0.245085 seconds
+cuda: transfer data from device and freeing memory took 0.626715 seconds
+GpuTimeWithMemTransfer took 1.92346 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 1.051883 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.081002 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076968 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.087886 seconds
+GpuDeviceTimeFull took 0.245871 seconds
+cuda: transfer data from device and freeing memory took 0.626660 seconds
+GpuTimeWithMemTransfer took 1.92447 seconds
+Data Analysis File Writing Complete to [BenchmarkLocalIntensityScaleTestOffset2.h5] file
+[       OK ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_2 (404278 ms)
+[ RUN      ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_6
+OpenMP reports 40 threads available.
+
+
+========================= 1/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/128/1024 vSize:134217728 vCapacity:134217728 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/128/1024 vSize:134217728 vCapacity:134217728 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.0727534 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.0733544 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.0733364 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.0746623 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.0733532 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.062025 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.008133 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004418 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005188 seconds
+GpuDeviceTimeFull took 0.017752 seconds
+cuda: transfer data from device and freeing memory took 0.043545 seconds
+GpuTimeWithMemTransfer took 0.123379 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.069537 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.008130 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004417 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005226 seconds
+GpuDeviceTimeFull took 0.017784 seconds
+cuda: transfer data from device and freeing memory took 0.043911 seconds
+GpuTimeWithMemTransfer took 0.131282 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.069451 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.008131 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004419 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005230 seconds
+GpuDeviceTimeFull took 0.017792 seconds
+cuda: transfer data from device and freeing memory took 0.043936 seconds
+GpuTimeWithMemTransfer took 0.131229 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.069396 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.008129 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004415 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005238 seconds
+GpuDeviceTimeFull took 0.017794 seconds
+cuda: transfer data from device and freeing memory took 0.043816 seconds
+GpuTimeWithMemTransfer took 0.131052 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.069490 seconds
+Number of blocks  (x/y/z):  128/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.008133 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.004419 seconds
+Number of blocks  (x/y/z):  1/32/128
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.005231 seconds
+GpuDeviceTimeFull took 0.017794 seconds
+cuda: transfer data from device and freeing memory took 0.043756 seconds
+GpuTimeWithMemTransfer took 0.131087 seconds
+
+
+========================= 2/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/256/1024 vSize:268435456 vCapacity:268435456 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/256/1024 vSize:268435456 vCapacity:268435456 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.145188 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.146615 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.146886 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.146533 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.148195 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.117888 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016181 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009028 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010453 seconds
+GpuDeviceTimeFull took 0.035675 seconds
+cuda: transfer data from device and freeing memory took 0.086790 seconds
+GpuTimeWithMemTransfer took 0.240422 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.139351 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016178 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009031 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010489 seconds
+GpuDeviceTimeFull took 0.035711 seconds
+cuda: transfer data from device and freeing memory took 0.086784 seconds
+GpuTimeWithMemTransfer took 0.261909 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.139718 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016180 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009035 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010408 seconds
+GpuDeviceTimeFull took 0.035635 seconds
+cuda: transfer data from device and freeing memory took 0.086280 seconds
+GpuTimeWithMemTransfer took 0.261697 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.140044 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016183 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009033 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010497 seconds
+GpuDeviceTimeFull took 0.035726 seconds
+cuda: transfer data from device and freeing memory took 0.086929 seconds
+GpuTimeWithMemTransfer took 0.262766 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.139101 seconds
+Number of blocks  (x/y/z):  256/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.016179 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.009012 seconds
+Number of blocks  (x/y/z):  1/32/256
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.010533 seconds
+GpuDeviceTimeFull took 0.035740 seconds
+cuda: transfer data from device and freeing memory took 0.085857 seconds
+GpuTimeWithMemTransfer took 0.260746 seconds
+
+
+========================= 3/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/384/1024 vSize:402653184 vCapacity:402653184 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/384/1024 vSize:402653184 vCapacity:402653184 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.218369 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.219344 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.224687 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.220051 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.223167 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.167768 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.024221 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013873 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016359 seconds
+GpuDeviceTimeFull took 0.054466 seconds
+cuda: transfer data from device and freeing memory took 0.126319 seconds
+GpuTimeWithMemTransfer took 0.348606 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.202399 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.024238 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013878 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016390 seconds
+GpuDeviceTimeFull took 0.054518 seconds
+cuda: transfer data from device and freeing memory took 0.127151 seconds
+GpuTimeWithMemTransfer took 0.384117 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.202229 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.024245 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013870 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016355 seconds
+GpuDeviceTimeFull took 0.054481 seconds
+cuda: transfer data from device and freeing memory took 0.127551 seconds
+GpuTimeWithMemTransfer took 0.384308 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.201948 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.024234 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013879 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016307 seconds
+GpuDeviceTimeFull took 0.054432 seconds
+cuda: transfer data from device and freeing memory took 0.129484 seconds
+GpuTimeWithMemTransfer took 0.385913 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.213567 seconds
+Number of blocks  (x/y/z):  384/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.024231 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.013875 seconds
+Number of blocks  (x/y/z):  1/32/384
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.016375 seconds
+GpuDeviceTimeFull took 0.054493 seconds
+cuda: transfer data from device and freeing memory took 0.129715 seconds
+GpuTimeWithMemTransfer took 0.397823 seconds
+
+
+========================= 4/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/512/1024 vSize:536870912 vCapacity:536870912 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/512/1024 vSize:536870912 vCapacity:536870912 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.291334 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.293009 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.294646 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.294257 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.293708 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.222739 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032279 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018799 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021323 seconds
+GpuDeviceTimeFull took 0.072415 seconds
+cuda: transfer data from device and freeing memory took 0.168356 seconds
+GpuTimeWithMemTransfer took 0.463564 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.268557 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032298 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018807 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021140 seconds
+GpuDeviceTimeFull took 0.072258 seconds
+cuda: transfer data from device and freeing memory took 0.169159 seconds
+GpuTimeWithMemTransfer took 0.510025 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.269650 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032270 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018833 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021314 seconds
+GpuDeviceTimeFull took 0.072431 seconds
+cuda: transfer data from device and freeing memory took 0.169120 seconds
+GpuTimeWithMemTransfer took 0.511251 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.269043 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032279 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018783 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021186 seconds
+GpuDeviceTimeFull took 0.072260 seconds
+cuda: transfer data from device and freeing memory took 0.169126 seconds
+GpuTimeWithMemTransfer took 0.510476 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.268844 seconds
+Number of blocks  (x/y/z):  512/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.032271 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.018834 seconds
+Number of blocks  (x/y/z):  1/32/512
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.021292 seconds
+GpuDeviceTimeFull took 0.072409 seconds
+cuda: transfer data from device and freeing memory took 0.168993 seconds
+GpuTimeWithMemTransfer took 0.510294 seconds
+
+
+========================= 5/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/640/1024 vSize:671088640 vCapacity:671088640 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/640/1024 vSize:671088640 vCapacity:671088640 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.364226 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.365629 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.366365 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.36939 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.368662 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.284109 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.040325 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023802 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027412 seconds
+GpuDeviceTimeFull took 0.091553 seconds
+cuda: transfer data from device and freeing memory took 0.209714 seconds
+GpuTimeWithMemTransfer took 0.585428 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.335309 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.040410 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023816 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027575 seconds
+GpuDeviceTimeFull took 0.091816 seconds
+cuda: transfer data from device and freeing memory took 0.211443 seconds
+GpuTimeWithMemTransfer took 0.638619 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.336197 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.040396 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023784 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027382 seconds
+GpuDeviceTimeFull took 0.091574 seconds
+cuda: transfer data from device and freeing memory took 0.212278 seconds
+GpuTimeWithMemTransfer took 0.640101 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.336063 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.040496 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023788 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027531 seconds
+GpuDeviceTimeFull took 0.091828 seconds
+cuda: transfer data from device and freeing memory took 0.211098 seconds
+GpuTimeWithMemTransfer took 0.639035 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.335747 seconds
+Number of blocks  (x/y/z):  640/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.040492 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.023826 seconds
+Number of blocks  (x/y/z):  1/32/640
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.027361 seconds
+GpuDeviceTimeFull took 0.091692 seconds
+cuda: transfer data from device and freeing memory took 0.210858 seconds
+GpuTimeWithMemTransfer took 0.638361 seconds
+
+
+========================= 6/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/768/1024 vSize:805306368 vCapacity:805306368 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/768/1024 vSize:805306368 vCapacity:805306368 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.438543 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.439609 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.438955 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.43956 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.440127 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.344264 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048794 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028711 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.032848 seconds
+GpuDeviceTimeFull took 0.110369 seconds
+cuda: transfer data from device and freeing memory took 0.252239 seconds
+GpuTimeWithMemTransfer took 0.706927 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.413317 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048569 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028767 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.032937 seconds
+GpuDeviceTimeFull took 0.110287 seconds
+cuda: transfer data from device and freeing memory took 0.254146 seconds
+GpuTimeWithMemTransfer took 0.777803 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.413886 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048683 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028773 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.033030 seconds
+GpuDeviceTimeFull took 0.110500 seconds
+cuda: transfer data from device and freeing memory took 0.253834 seconds
+GpuTimeWithMemTransfer took 0.778268 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.413835 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048732 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028766 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.032879 seconds
+GpuDeviceTimeFull took 0.110391 seconds
+cuda: transfer data from device and freeing memory took 0.254188 seconds
+GpuTimeWithMemTransfer took 0.778464 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.413421 seconds
+Number of blocks  (x/y/z):  768/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.048676 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.028749 seconds
+Number of blocks  (x/y/z):  1/32/768
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.032901 seconds
+GpuDeviceTimeFull took 0.110342 seconds
+cuda: transfer data from device and freeing memory took 0.253435 seconds
+GpuTimeWithMemTransfer took 0.777248 seconds
+
+
+========================= 7/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/896/1024 vSize:939524096 vCapacity:939524096 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/896/1024 vSize:939524096 vCapacity:939524096 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.511596 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.514779 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.512288 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.514568 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.516382 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.401415 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.058317 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033795 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.040103 seconds
+GpuDeviceTimeFull took 0.132231 seconds
+cuda: transfer data from device and freeing memory took 0.293806 seconds
+GpuTimeWithMemTransfer took 0.827509 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.484154 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.057040 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033797 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.039702 seconds
+GpuDeviceTimeFull took 0.130572 seconds
+cuda: transfer data from device and freeing memory took 0.295295 seconds
+GpuTimeWithMemTransfer took 0.910072 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.483235 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.057009 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033840 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.039802 seconds
+GpuDeviceTimeFull took 0.130666 seconds
+cuda: transfer data from device and freeing memory took 0.295356 seconds
+GpuTimeWithMemTransfer took 0.90931 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.482610 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.056910 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033691 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.039759 seconds
+GpuDeviceTimeFull took 0.130376 seconds
+cuda: transfer data from device and freeing memory took 0.295638 seconds
+GpuTimeWithMemTransfer took 0.908673 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.482977 seconds
+Number of blocks  (x/y/z):  896/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.057012 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.033776 seconds
+Number of blocks  (x/y/z):  1/32/896
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.040154 seconds
+GpuDeviceTimeFull took 0.130955 seconds
+cuda: transfer data from device and freeing memory took 0.295233 seconds
+GpuTimeWithMemTransfer took 0.909211 seconds
+
+
+========================= 8/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1024/1024 vSize:1073741824 vCapacity:1073741824 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1024/1024 vSize:1073741824 vCapacity:1073741824 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.584577 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.586697 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.589528 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.590337 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.588834 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.458926 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.065719 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039029 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044363 seconds
+GpuDeviceTimeFull took 0.149125 seconds
+cuda: transfer data from device and freeing memory took 0.335796 seconds
+GpuTimeWithMemTransfer took 0.943904 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.560568 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.065471 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039004 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044543 seconds
+GpuDeviceTimeFull took 0.149032 seconds
+cuda: transfer data from device and freeing memory took 0.335567 seconds
+GpuTimeWithMemTransfer took 1.04522 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.559325 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.065501 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.038966 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044855 seconds
+GpuDeviceTimeFull took 0.149337 seconds
+cuda: transfer data from device and freeing memory took 0.335405 seconds
+GpuTimeWithMemTransfer took 1.04412 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.566224 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.065325 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039102 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044853 seconds
+GpuDeviceTimeFull took 0.149296 seconds
+cuda: transfer data from device and freeing memory took 0.335540 seconds
+GpuTimeWithMemTransfer took 1.05111 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.568117 seconds
+Number of blocks  (x/y/z):  1024/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.065436 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.039117 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.044693 seconds
+GpuDeviceTimeFull took 0.149261 seconds
+cuda: transfer data from device and freeing memory took 0.335213 seconds
+GpuTimeWithMemTransfer took 1.05265 seconds
+
+
+========================= 9/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1152/1024 vSize:1207959552 vCapacity:1207959552 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1152/1024 vSize:1207959552 vCapacity:1207959552 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.656282 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.660084 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.664174 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.662117 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.664041 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.530286 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.073890 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044293 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.053606 seconds
+GpuDeviceTimeFull took 0.171804 seconds
+cuda: transfer data from device and freeing memory took 0.377624 seconds
+GpuTimeWithMemTransfer took 1.07977 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.630064 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.074026 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044147 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.053305 seconds
+GpuDeviceTimeFull took 0.171491 seconds
+cuda: transfer data from device and freeing memory took 0.378457 seconds
+GpuTimeWithMemTransfer took 1.18006 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.635455 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.073831 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044233 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.053473 seconds
+GpuDeviceTimeFull took 0.171554 seconds
+cuda: transfer data from device and freeing memory took 0.380892 seconds
+GpuTimeWithMemTransfer took 1.18796 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.674507 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.073847 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044125 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.052743 seconds
+GpuDeviceTimeFull took 0.170730 seconds
+cuda: transfer data from device and freeing memory took 0.386153 seconds
+GpuTimeWithMemTransfer took 1.23147 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.639036 seconds
+Number of blocks  (x/y/z):  1152/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.073966 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.044419 seconds
+Number of blocks  (x/y/z):  1/32/1152
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.052894 seconds
+GpuDeviceTimeFull took 0.171292 seconds
+cuda: transfer data from device and freeing memory took 0.378617 seconds
+GpuTimeWithMemTransfer took 1.189 seconds
+
+
+========================= 10/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1280/1024 vSize:1342177280 vCapacity:1342177280 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1280/1024 vSize:1342177280 vCapacity:1342177280 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.731788 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.737183 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.736607 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.738267 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.735732 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.579876 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.082835 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049857 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056142 seconds
+GpuDeviceTimeFull took 0.188848 seconds
+cuda: transfer data from device and freeing memory took 0.420202 seconds
+GpuTimeWithMemTransfer took 1.18898 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.703031 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.082535 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049648 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056319 seconds
+GpuDeviceTimeFull took 0.188516 seconds
+cuda: transfer data from device and freeing memory took 0.420071 seconds
+GpuTimeWithMemTransfer took 1.31168 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.706062 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.082642 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049848 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056497 seconds
+GpuDeviceTimeFull took 0.189002 seconds
+cuda: transfer data from device and freeing memory took 0.419777 seconds
+GpuTimeWithMemTransfer took 1.3149 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.701062 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.082547 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049661 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056581 seconds
+GpuDeviceTimeFull took 0.188803 seconds
+cuda: transfer data from device and freeing memory took 0.421330 seconds
+GpuTimeWithMemTransfer took 1.31125 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.703352 seconds
+Number of blocks  (x/y/z):  1280/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.082477 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.049494 seconds
+Number of blocks  (x/y/z):  1/32/1280
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.056450 seconds
+GpuDeviceTimeFull took 0.188434 seconds
+cuda: transfer data from device and freeing memory took 0.420359 seconds
+GpuTimeWithMemTransfer took 1.3122 seconds
+
+
+========================= 11/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1408/1024 vSize:1476395008 vCapacity:1476395008 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1408/1024 vSize:1476395008 vCapacity:1476395008 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.804431 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.807605 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.808447 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.807692 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.807607 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.638085 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.091119 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054857 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.062734 seconds
+GpuDeviceTimeFull took 0.208726 seconds
+cuda: transfer data from device and freeing memory took 0.461342 seconds
+GpuTimeWithMemTransfer took 1.30821 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.776958 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.091043 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054711 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.063332 seconds
+GpuDeviceTimeFull took 0.209101 seconds
+cuda: transfer data from device and freeing memory took 0.461304 seconds
+GpuTimeWithMemTransfer took 1.44743 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.773445 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.091047 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054755 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.063209 seconds
+GpuDeviceTimeFull took 0.209026 seconds
+cuda: transfer data from device and freeing memory took 0.461476 seconds
+GpuTimeWithMemTransfer took 1.44402 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.749815 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.091003 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054708 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.063375 seconds
+GpuDeviceTimeFull took 0.209101 seconds
+cuda: transfer data from device and freeing memory took 0.461048 seconds
+GpuTimeWithMemTransfer took 1.42002 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.778800 seconds
+Number of blocks  (x/y/z):  1408/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.091037 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.054741 seconds
+Number of blocks  (x/y/z):  1/32/1408
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.063818 seconds
+GpuDeviceTimeFull took 0.209611 seconds
+cuda: transfer data from device and freeing memory took 0.461376 seconds
+GpuTimeWithMemTransfer took 1.44984 seconds
+
+
+========================= 12/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1536/1024 vSize:1610612736 vCapacity:1610612736 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1536/1024 vSize:1610612736 vCapacity:1610612736 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.8766 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.877975 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.881929 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.876642 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.879635 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.705258 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.099847 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059762 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.068144 seconds
+GpuDeviceTimeFull took 0.227767 seconds
+cuda: transfer data from device and freeing memory took 0.504873 seconds
+GpuTimeWithMemTransfer took 1.43796 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.842164 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.099643 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059834 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.067744 seconds
+GpuDeviceTimeFull took 0.227237 seconds
+cuda: transfer data from device and freeing memory took 0.506435 seconds
+GpuTimeWithMemTransfer took 1.57589 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.851494 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.099422 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059475 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.067866 seconds
+GpuDeviceTimeFull took 0.226777 seconds
+cuda: transfer data from device and freeing memory took 0.506244 seconds
+GpuTimeWithMemTransfer took 1.58458 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.855108 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.099460 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059641 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.067626 seconds
+GpuDeviceTimeFull took 0.226744 seconds
+cuda: transfer data from device and freeing memory took 0.505972 seconds
+GpuTimeWithMemTransfer took 1.58788 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.855952 seconds
+Number of blocks  (x/y/z):  1536/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.099502 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.059728 seconds
+Number of blocks  (x/y/z):  1/32/1536
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.067877 seconds
+GpuDeviceTimeFull took 0.227121 seconds
+cuda: transfer data from device and freeing memory took 0.506144 seconds
+GpuTimeWithMemTransfer took 1.58929 seconds
+
+
+========================= 13/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1664/1024 vSize:1744830464 vCapacity:1744830464 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1664/1024 vSize:1744830464 vCapacity:1744830464 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.948639 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.953504 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.952544 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.951727 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.951814 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.762712 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.108166 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065300 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.076939 seconds
+GpuDeviceTimeFull took 0.250419 seconds
+cuda: transfer data from device and freeing memory took 0.547264 seconds
+GpuTimeWithMemTransfer took 1.56047 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.901318 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.108016 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065510 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.075999 seconds
+GpuDeviceTimeFull took 0.249539 seconds
+cuda: transfer data from device and freeing memory took 0.548285 seconds
+GpuTimeWithMemTransfer took 1.69921 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.899785 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.108106 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065863 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.076833 seconds
+GpuDeviceTimeFull took 0.250816 seconds
+cuda: transfer data from device and freeing memory took 0.546609 seconds
+GpuTimeWithMemTransfer took 1.69726 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.912755 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.108003 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065547 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.076252 seconds
+GpuDeviceTimeFull took 0.249817 seconds
+cuda: transfer data from device and freeing memory took 0.560005 seconds
+GpuTimeWithMemTransfer took 1.72265 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.927539 seconds
+Number of blocks  (x/y/z):  1664/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.108076 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.065509 seconds
+Number of blocks  (x/y/z):  1/32/1664
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.076285 seconds
+GpuDeviceTimeFull took 0.249885 seconds
+cuda: transfer data from device and freeing memory took 0.557215 seconds
+GpuTimeWithMemTransfer took 1.73472 seconds
+
+
+========================= 14/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1792/1024 vSize:1879048192 vCapacity:1879048192 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1792/1024 vSize:1879048192 vCapacity:1879048192 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.02033 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.02839 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.02405 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.0256 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.02307 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.814009 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.116538 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071099 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.081676 seconds
+GpuDeviceTimeFull took 0.269328 seconds
+cuda: transfer data from device and freeing memory took 0.587860 seconds
+GpuTimeWithMemTransfer took 1.67127 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 0.982156 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.116636 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.070893 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.082312 seconds
+GpuDeviceTimeFull took 0.269855 seconds
+cuda: transfer data from device and freeing memory took 0.589466 seconds
+GpuTimeWithMemTransfer took 1.84153 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 0.954418 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.116363 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071224 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.082055 seconds
+GpuDeviceTimeFull took 0.269657 seconds
+cuda: transfer data from device and freeing memory took 0.588489 seconds
+GpuTimeWithMemTransfer took 1.81262 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 0.924153 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.116381 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071024 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.082418 seconds
+GpuDeviceTimeFull took 0.269837 seconds
+cuda: transfer data from device and freeing memory took 0.588058 seconds
+GpuTimeWithMemTransfer took 1.7821 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 0.967218 seconds
+Number of blocks  (x/y/z):  1792/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.116589 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.071130 seconds
+Number of blocks  (x/y/z):  1/32/1792
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.082641 seconds
+GpuDeviceTimeFull took 0.270381 seconds
+cuda: transfer data from device and freeing memory took 0.589839 seconds
+GpuTimeWithMemTransfer took 1.82749 seconds
+
+
+========================= 15/15 ===============
+Mesh info: MeshData: size(Y/X/Z)=1024/1920/1024 vSize:2013265920 vCapacity:2013265920 elementSize:4
+MESH: MeshData: size(Y/X/Z)=1024/1920/1024 vSize:2013265920 vCapacity:2013265920 elementSize:4
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.10087 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.10961 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.10989 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.10766 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.10678 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuMemTransferHostToDevice took 0.845723 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.125055 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076776 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.086544 seconds
+GpuDeviceTimeFull took 0.288391 seconds
+cuda: transfer data from device and freeing memory took 0.629700 seconds
+GpuTimeWithMemTransfer took 1.76387 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuMemTransferHostToDevice took 1.033931 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.125186 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076707 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.086732 seconds
+GpuDeviceTimeFull took 0.288640 seconds
+cuda: transfer data from device and freeing memory took 0.630416 seconds
+GpuTimeWithMemTransfer took 1.95304 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuMemTransferHostToDevice took 1.021386 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.125132 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076487 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.086558 seconds
+GpuDeviceTimeFull took 0.288193 seconds
+cuda: transfer data from device and freeing memory took 0.630436 seconds
+GpuTimeWithMemTransfer took 1.94007 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuMemTransferHostToDevice took 1.036600 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.125229 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076374 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.086497 seconds
+GpuDeviceTimeFull took 0.288115 seconds
+cuda: transfer data from device and freeing memory took 0.630373 seconds
+GpuTimeWithMemTransfer took 1.95514 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuMemTransferHostToDevice took 1.030396 seconds
+Number of blocks  (x/y/z):  1920/1/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeYdir took 0.125244 seconds
+Number of blocks  (x/y/z):  1/32/1024
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeXdir took 0.076867 seconds
+Number of blocks  (x/y/z):  1/32/1920
+Number of threads (x/y/z): 1/32/1
+GpuDeviceTimeZdir took 0.087012 seconds
+GpuDeviceTimeFull took 0.289137 seconds
+cuda: transfer data from device and freeing memory took 0.629531 seconds
+GpuTimeWithMemTransfer took 1.94911 seconds
+Data Analysis File Writing Complete to [BenchmarkLocalIntensityScaleTestOffset6.h5] file
+[       OK ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_6 (391907 ms)
+[----------] 2 tests from BenchmarkLocalIntensityScaleTest (796185 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (1266482 ms total)
+[  PASSED  ] 3 tests.
