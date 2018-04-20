@@ -13,7 +13,7 @@ cf.Colormap = colormap(jet);
 for i = 1:length(cf.Children)
    a = cf.Children(i); 
     
-   a.FontSize = 20;
+   a.FontSize = 14;
    
    a.YColor = [0,0,0];
    

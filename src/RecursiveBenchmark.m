@@ -1,39 +1,125 @@
+
 function RecursiveBenchmark()
 addpath('/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/APRBench/Matlab');
-
-% name='asdf.h5';
-analysis_root='/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/build/';
 
 xx=figure(1);
 clf;
 hold on;
 format_figure(xx);
-% plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
-% plotData([analysis_root, 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
-plotData(['../BenchmarkResults/v100/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
-plotData(['../BenchmarkResults/v100/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
-plotData(['../BenchmarkResults/Particulator/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
-plotData(['../BenchmarkResults/Particulator/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 1);
 
-title('Local Intensity Scale Titan X vs 10 x Xeon(R)@2.6GHz')
-l = legend({'CPU offset=2', 'GPU offset=2', 'CPU offset = 6', 'GPU offset = 6'});
-l.Location = 'northwest';
+[~,gV100_2]=plotDataSimple(['../BenchmarkResults/v100/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 0, 1);
+[~,gV100_6]=plotDataSimple(['../BenchmarkResults/v100/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 0, 1);
+[~,gP100_2]=plotDataSimple(['../BenchmarkResults/p100/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 0, 1);
+[~,gP100_6]=plotDataSimple(['../BenchmarkResults/p100/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 0, 1);
+[~,g1080_2]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 0, 1);
+[~,g1080_6]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 0, 1);
+[~,gTITAN_2]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 0, 1);
+[~,gTITAN_6]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 0, 1);
+[cCPU40_2,~]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
+[cCPU40_6,~]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 0);
+[cCPU10_2,~]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
+[cCPU10_6,~]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 0);
+[cCPU_2,~]=plotDataSimple(['../BenchmarkResults/ParticulatorSingleCPU/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
+[cCPU_6,~]=plotDataSimple(['../BenchmarkResults/ParticulatorSingleCPU/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 0);
+
+v100speedup_2=round(mean(cCPU_2(15) ./ gV100_2(15)));
+p100speedup_2=round(mean(cCPU_2(15) ./ gP100_2(15)));
+g1080speedup_2=round(mean(cCPU_2(15) ./ g1080_2(15)));
+gTTIANspeedup_2=round(mean(cCPU_2(15) ./ gTITAN_2(15)));
+cpu40speedup_2=round(mean(cCPU_2(15) ./ cCPU40_2(15)));
+cpu10speedup_2=round(mean(cCPU_2(15) ./ cCPU10_2(15)));
+
+v100speedup_6=round(mean(cCPU_6(15) ./ gV100_6(15)));
+p100speedup_6=round(mean(cCPU_6(15) ./ gP100_6(15)));
+g1080speedup_6=round(mean(cCPU_6(15) ./ g1080_6(15)));
+gTTIANspeedup_6=round(mean(cCPU_6(15) ./ gTITAN_6(15)));
+cpu40speedup_6=round(mean(cCPU_6(15) ./ cCPU40_6(15)));
+cpu10speedup_6=round(mean(cCPU_6(15) ./ cCPU10_6(15)));
+
+axis([-Inf Inf -Inf 2.5]);    
+
+l = legend( { strcat('v100 off=2 speedup=', num2str(v100speedup_2), 'x'),
+              strcat('v100 off=6 speedup=', num2str(v100speedup_6), 'x'),
+              strcat('p100 off=2 speedup=', num2str(p100speedup_2), 'x'),
+              strcat('p100 off=6 speedup=', num2str(p100speedup_6), 'x'),
+              strcat('GTX 1080 off=2 speedup=', num2str(g1080speedup_2), 'x'),
+              strcat('GTX 1080 off=6 speedup=', num2str(g1080speedup_6), 'x'),
+              strcat('TITAN X off=2 speedup=', num2str(gTTIANspeedup_2), 'x'),
+              strcat('TITAN X off=6 speedup=', num2str(gTTIANspeedup_6), 'x'),          
+              strcat('40xCPU off=2 speedup=', num2str(cpu40speedup_2), 'x'),
+              strcat('40xCPU off=6 speedup=', num2str(cpu40speedup_6), 'x'),
+              strcat('10xCPU off=2 speedup=', num2str(cpu10speedup_2), 'x'),
+              strcat('10xCPU off=6 speedup=', num2str(cpu10speedup_6), 'x'),
+              strcat('single CPU off=2'),
+              strcat('single CPU off=6')
+          });
+l.Location = 'northeast';
 l.Box = 'off';
-l.FontSize = 20;
+l.FontSize = 16;
+title('Local Intensity Scale')
+xlabel('Image size in GB');
+ylabel('Processing time in seconds');
+set(gcf, 'Position', [10, 10, 1300, 1100])
 print('localIntensityScaleCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 
 xx=figure(2);
 clf;
 hold on;
 format_figure(xx);
-plotData(['../BenchmarkResults/v100/', 'BenchmarkBsplineTest.h5'], 0, 0);
 
-plotData(['../BenchmarkResults/Particulator/', 'BenchmarkBsplineTest.h5'], 1, 1);
+[~,gV100_B]=plotDataSimple(['../BenchmarkResults/v100/', 'BenchmarkBsplineTest.h5'], 0, 1);
+[~,gP100_B]=plotDataSimple(['../BenchmarkResults/p100/', 'BenchmarkBsplineTest.h5'], 0, 1);
+[~,g1080_B]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkBsplineTest.h5'], 0, 1);
+[~,gTITAN_B]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkBsplineTest.h5'], 0, 1);
+[cCPU40_B,~]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkBsplineTest.h5'], 1, 0);
+[cCPU10_B,~]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkBsplineTest.h5'], 1, 0);
+[cCPU_B,~]=plotDataSimple(['../BenchmarkResults/ParticulatorSingleCPU/', 'BenchmarkBsplineTest.h5'], 1, 0);
 
-title('Recursive filter Titan X vs 10 x Xeon(R)@2.6GHz')
+v100speedup_B=round(mean(cCPU_B ./ gV100_B));
+p100speedup_B=round(mean(cCPU_B ./ gP100_B));
+g1080speedup_B=round(mean(cCPU_B(1:15) ./ g1080_B));
+gTITANspeedup_B=round(mean(cCPU_B ./ gTITAN_B));
+cpu40speedup_B=round(mean(cCPU_B(1:15) ./ cCPU40_B));
+cpu10speedup_B=round(mean(cCPU_B ./ cCPU10_B));
+
+l = legend( { strcat('v100 speedup=', num2str(v100speedup_B), 'x'),
+              strcat('p100 speedup=', num2str(p100speedup_B), 'x'),
+              strcat('GTX 1080 speedup=', num2str(g1080speedup_B), 'x'),
+              strcat('TITAN X speedup=', num2str(gTITANspeedup_B), 'x'),
+              strcat('40xCPU speedup=', num2str(cpu40speedup_B), 'x'),
+              strcat('10xCPU speedup=', num2str(cpu10speedup_B), 'x'),
+              strcat('single CPU'),
+          });
+l.Location = 'northeast';
+l.Box = 'off';
+l.FontSize = 16;      
+title('Recursive Filter (k0=18)')
+set(gcf, 'Position', [2500, 10, 1300, 1100])
+axis([-Inf Inf -Inf 8]);   
+xlabel('Image size in GB');
+ylabel('Processing time in seconds');
 print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 
-function plotData(fileName, plotNum, colorShift)
+function [cpuData, gpuData]=plotDataSimple(fileName, showCpu, showGpu)
+    ad = load_analysis_data(fileName);
+    x=ad.ticksValue;
+    cpuData=[];
+    gpuData=[];
+    if showCpu == 1
+        [cpuData, cpuErr]=getMeanMeasurements(ad.CpuTime, ad.numOfRepetitions, ad.numOfRepetitionsToSkip);
+        errorbar(x, cpuData,cpuErr);
+    end
+    if showGpu == 1
+        [gpuData, gpuErr]=getMeanMeasurements(ad.GpuDeviceTimeFull, ad.numOfRepetitions, ad.numOfRepetitionsToSkip);
+        errorbar(x, gpuData,gpuErr);
+    end
+    
+    set(gca,'XTick', ad.ticksValue)
+    set(gca,'XTickLabel', num2str(ad.ticksValue/ad.xNormalizer,strcat('%.',num2str(ad.numberOfDecimalPointsX),'f')));    
+end
+
+
+function plotData(fileName, colorShift)
     ad = load_analysis_data(fileName);
     
     [cpuData, cpuErr]=getMeanMeasurements(ad.CpuTime, ad.numOfRepetitions, ad.numOfRepetitionsToSkip);
