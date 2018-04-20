@@ -26,19 +26,19 @@ format_figure(xx);
 [cCPU_2,~]=plotDataSimple(['../BenchmarkResults/ParticulatorSingleCPU/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
 [cCPU_6,~]=plotDataSimple(['../BenchmarkResults/ParticulatorSingleCPU/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 0);
 
-v100speedup_2=round(mean(cCPU_2(15) ./ gV100_2(15)));
-p100speedup_2=round(mean(cCPU_2(15) ./ gP100_2(15)));
-g1080speedup_2=round(mean(cCPU_2(15) ./ g1080_2(15)));
-gTTIANspeedup_2=round(mean(cCPU_2(15) ./ gTITAN_2(15)));
-cpu40speedup_2=round(mean(cCPU_2(15) ./ cCPU40_2(15)));
-cpu10speedup_2=round(mean(cCPU_2(15) ./ cCPU10_2(15)));
+v100speedup_2=round(mean(cCPU_2 ./ gV100_2));
+p100speedup_2=round(mean(cCPU_2 ./ gP100_2));
+g1080speedup_2=round(mean(cCPU_2(1:15) ./ g1080_2));
+gTTIANspeedup_2=round(mean(cCPU_2 ./ gTITAN_2));
+cpu40speedup_2=round(mean(cCPU_2(1:15) ./ cCPU40_2));
+cpu10speedup_2=round(mean(cCPU_2 ./ cCPU10_2));
 
-v100speedup_6=round(mean(cCPU_6(15) ./ gV100_6(15)));
-p100speedup_6=round(mean(cCPU_6(15) ./ gP100_6(15)));
-g1080speedup_6=round(mean(cCPU_6(15) ./ g1080_6(15)));
-gTTIANspeedup_6=round(mean(cCPU_6(15) ./ gTITAN_6(15)));
-cpu40speedup_6=round(mean(cCPU_6(15) ./ cCPU40_6(15)));
-cpu10speedup_6=round(mean(cCPU_6(15) ./ cCPU10_6(15)));
+v100speedup_6=round(mean(cCPU_6 ./ gV100_6));
+p100speedup_6=round(mean(cCPU_6 ./ gP100_6));
+g1080speedup_6=round(mean(cCPU_6(1:15) ./ g1080_6));
+gTTIANspeedup_6=round(mean(cCPU_6 ./ gTITAN_6));
+cpu40speedup_6=round(mean(cCPU_6(1:15) ./ cCPU40_6));
+cpu10speedup_6=round(mean(cCPU_6 ./ cCPU10_6));
 
 axis([-Inf Inf -Inf 2.5]);    
 
