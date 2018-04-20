@@ -61,6 +61,7 @@ xlabel('Image size in GB');
 ylabel('Processing time in seconds');
 set(gcf, 'Position', [10, 10, 1300, 1100])
 print('localIntensityScaleCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
+print('localIntensityScaleCpuVsGpu.jpg' ,'-djpeg','-painters','-loose','-cmyk');
 
 xx=figure(2);
 clf;
@@ -99,6 +100,7 @@ axis([-Inf Inf -Inf 8]);
 xlabel('Image size in GB');
 ylabel('Processing time in seconds');
 print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
+print('recursiveCpuVsGpu.jpg' ,'-djpeg','-painters','-loose','-cmyk');
 
 function [cpuData, gpuData]=plotDataSimple(fileName, showCpu, showGpu)
     ad = load_analysis_data(fileName);
