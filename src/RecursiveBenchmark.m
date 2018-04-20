@@ -1,7 +1,11 @@
 
 function RecursiveBenchmark()
-addpath('/Users/gonciarz/Documents/MOSAIC/work/repo/RecursiveGPU/APRBench/Matlab');
+addpath('../APRBench/Matlab');
 
+
+% -------------------------------------------------------------------------
+% Local Intensity plot
+% -------------------------------------------------------------------------
 xx=figure(1);
 clf;
 hold on;
@@ -63,6 +67,10 @@ set(gcf, 'Position', [10, 10, 1300, 1100])
 print('localIntensityScaleCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 print('localIntensityScaleCpuVsGpu.jpg' ,'-djpeg','-painters','-loose','-cmyk');
 
+
+% -------------------------------------------------------------------------
+% Recursive Filter plot
+% -------------------------------------------------------------------------
 xx=figure(2);
 clf;
 hold on;
@@ -101,6 +109,10 @@ xlabel('Image size in GB');
 ylabel('Processing time in seconds');
 print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 print('recursiveCpuVsGpu.jpg' ,'-djpeg','-painters','-loose','-cmyk');
+
+% -------------------------------------------------------------------------
+% Utils
+% -------------------------------------------------------------------------
 
 function [cpuData, gpuData]=plotDataSimple(fileName, showCpu, showGpu)
     ad = load_analysis_data(fileName);
