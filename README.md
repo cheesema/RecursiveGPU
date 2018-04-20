@@ -18,3 +18,6 @@ make -j 8
 ./benchmark | tee testOutput.txt
 
 ```
+![LocalIntensityScale speedup plot](BenchmarkResults/localIntensityScaleCpuVsGpu.jpg?raw=true)
+![Recursive Filter speedup plot](BenchmarkResults/recursiveCpuVsGpu.jpg?raw=true)
+
