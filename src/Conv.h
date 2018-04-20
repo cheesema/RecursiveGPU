@@ -10,6 +10,9 @@
 template <typename T>
 void computeConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &kernel);
 
+template <typename T>
+void compute3rdPartyConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &kernel);
+
 int test();
 
 
