@@ -9,8 +9,8 @@
 #include "TestTools.hpp"
 
 namespace {
-    const int xSize = 4096;
-    const int ySize = 4096;
+    const int xSize = 64 * 32 * 24;
+    const int ySize = 1024;
 
     TEST(MemBenchmarTest, COPY1D) {
         APRTimer timer(true);
