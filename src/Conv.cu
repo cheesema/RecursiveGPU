@@ -78,55 +78,55 @@ void computeConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &ker
 
     return;
 }
-//
-//#define Mask_width  5
-//#define Mask_radius Mask_width/2
-//#define TILE_WIDTH 16
-//#define w (TILE_WIDTH + Mask_width - 1)
-//#define clamp(x) (min(max((x), 0.0), 1.0))
-//// 2D version (?)
-//__global__ void convolution(float *I, const float* __restrict__ M, float *P,
-//                            int channels, int width, int height) {
-//    __shared__ float N_ds[w][w];
-//    int k;
-//    for (k = 0; k < channels; k++) {
-//        // First batch loading
-//        int dest = threadIdx.y * TILE_WIDTH + threadIdx.x,
-//                destY = dest / w, destX = dest % w,
-//                srcY = blockIdx.y * TILE_WIDTH + destY - Mask_radius,
-//                srcX = blockIdx.x * TILE_WIDTH + destX - Mask_radius,
-//                src = (srcY * width + srcX) * channels + k;
-//        if (srcY >= 0 && srcY < height && srcX >= 0 && srcX < width)
-//            N_ds[destY][destX] = I[src];
-//        else
-//            N_ds[destY][destX] = 0;
-//
-//        // Second batch loading
-//        dest = threadIdx.y * TILE_WIDTH + threadIdx.x + TILE_WIDTH * TILE_WIDTH;
-//        destY = dest / w, destX = dest % w;
-//        srcY = blockIdx.y * TILE_WIDTH + destY - Mask_radius;
-//        srcX = blockIdx.x * TILE_WIDTH + destX - Mask_radius;
-//        src = (srcY * width + srcX) * channels + k;
-//        if (destY < w) {
-//            if (srcY >= 0 && srcY < height && srcX >= 0 && srcX < width)
-//                N_ds[destY][destX] = I[src];
-//            else
-//                N_ds[destY][destX] = 0;
-//        }
-//        __syncthreads();
-//
-//        float accum = 0;
-//        int y, x;
-//        for (y = 0; y < Mask_width; y++)
-//            for (x = 0; x < Mask_width; x++)
-//                accum += N_ds[threadIdx.y + y][threadIdx.x + x] * M[y * Mask_width + x];
-//        y = blockIdx.y * TILE_WIDTH + threadIdx.y;
-//        x = blockIdx.x * TILE_WIDTH + threadIdx.x;
-//        if (y < height && x < width)
-//            P[(y * width + x) * channels + k] = clamp(accum);
-//        __syncthreads();
-//    }
-//}
+
+#define Mask_width  5
+#define Mask_radius Mask_width/2
+#define TILE_WIDTH 16
+#define w (TILE_WIDTH + Mask_width - 1)
+#define clamp(x) (min(max((x), 0.0), 1.0))
+// 2D version (?)
+__global__ void convolution(float *I, const float* __restrict__ M, float *P,
+                            int channels, int width, int height) {
+    __shared__ float N_ds[w][w];
+    int k;
+    for (k = 0; k < channels; k++) {
+        // First batch loading
+        int dest = threadIdx.y * TILE_WIDTH + threadIdx.x,
+                destY = dest / w, destX = dest % w,
+                srcY = blockIdx.y * TILE_WIDTH + destY - Mask_radius,
+                srcX = blockIdx.x * TILE_WIDTH + destX - Mask_radius,
+                src = (srcY * width + srcX) * channels + k;
+        if (srcY >= 0 && srcY < height && srcX >= 0 && srcX < width)
+            N_ds[destY][destX] = I[src];
+        else
+            N_ds[destY][destX] = 0;
+
+        // Second batch loading
+        dest = threadIdx.y * TILE_WIDTH + threadIdx.x + TILE_WIDTH * TILE_WIDTH;
+        destY = dest / w, destX = dest % w;
+        srcY = blockIdx.y * TILE_WIDTH + destY - Mask_radius;
+        srcX = blockIdx.x * TILE_WIDTH + destX - Mask_radius;
+        src = (srcY * width + srcX) * channels + k;
+        if (destY < w) {
+            if (srcY >= 0 && srcY < height && srcX >= 0 && srcX < width)
+                N_ds[destY][destX] = I[src];
+            else
+                N_ds[destY][destX] = 0;
+        }
+        __syncthreads();
+
+        float accum = 0;
+        int y, x;
+        for (y = 0; y < Mask_width; y++)
+            for (x = 0; x < Mask_width; x++)
+                accum += N_ds[threadIdx.y + y][threadIdx.x + x] * M[y * Mask_width + x];
+        y = blockIdx.y * TILE_WIDTH + threadIdx.y;
+        x = blockIdx.x * TILE_WIDTH + threadIdx.x;
+        if (y < height && x < width)
+            P[(y * width + x) * channels + k] = clamp(accum);
+        __syncthreads();
+    }
+}
 
 #define     MASK_WIDTH      3
 #define     MASK_RADIUS     MASK_WIDTH / 2
@@ -136,7 +136,10 @@ void computeConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &ker
 /**
  * GPU 3D Convolution using shared memory
  */
- template <typename ImgType>
+// SOME CODE FROM
+// https://stackoverflow.com/questions/22577857/3d-convolution-with-cuda-using-shared-memory
+// for comparison
+template <typename ImgType>
 __global__ void convolution(ImgType *I, ImgType* M, ImgType *P, int width, int height, int depth)
 {
     /***** WRITE TO SHARED MEMORY *****/
@@ -206,8 +209,6 @@ __global__ void convolution(ImgType *I, ImgType* M, ImgType *P, int width, int h
 
 template <typename T>
 void compute3rdPartyConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &kernel) {
-    std::cout << "HELLO" << std::endl;
-
     T *dInput;
     size_t dataSize = in.mesh.size() * sizeof(T);
     cudaMalloc(&dInput, dataSize);
@@ -238,18 +239,13 @@ void compute3rdPartyConv(const MeshData<T> &in, MeshData<T> &out, const MeshData
     cudaMalloc((void **)&deviceMaskData,        MASK_WIDTH  * MASK_WIDTH   * MASK_WIDTH  * sizeof(T));
     cudaMemcpy(deviceMaskData,       mask, MASK_WIDTH  * MASK_WIDTH   * MASK_WIDTH  * sizeof(T), cudaMemcpyHostToDevice);
 
-//    dim3 threadsPerBlock(1, 32, 32);
-//    dim3 numBlocks(1,
-//                   (in.y_num + threadsPerBlock.y - 1)/threadsPerBlock.y,
-//                   (in.z_num + threadsPerBlock.z - 1)/threadsPerBlock.z);
-//    conv <<<numBlocks, threadsPerBlock>>> (dInput, dOutput, in.x_num, in.y_num, in.z_num, dKernel, kernel.x_num);
     int image_width = in.y_num;
     int image_height = in.x_num;
     int image_depth = in.z_num;
     dim3 dimBlock(TILE_WIDTH, TILE_WIDTH, TILE_WIDTH);
     dim3 dimGrid((image_width + TILE_WIDTH - 1) / TILE_WIDTH, (image_height + TILE_WIDTH - 1) / TILE_WIDTH, (image_depth + TILE_WIDTH - 1) / TILE_WIDTH);
     APRTimer timer(true);
-    timer.start_timer("DEVICE time");
+    timer.start_timer("DEVICE CALC");
     convolution<<<dimGrid, dimBlock>>>(dInput, deviceMaskData, dOutput, image_width, image_height, image_depth);
     waitForCuda();
     timer.stop_timer();
@@ -258,161 +254,4 @@ void compute3rdPartyConv(const MeshData<T> &in, MeshData<T> &out, const MeshData
     cudaFree(deviceMaskData);
 
     return;
-}
-
-// SOME CODE FROM
-// https://stackoverflow.com/questions/22577857/3d-convolution-with-cuda-using-shared-memory
-// for comparison
-
-int test() {
-
-    int image_width  = 16;
-    int image_height = 16;
-    int image_depth  = 5;
-
-    float *deviceInputImageData;
-    float *deviceOutputImageData;
-    float *deviceMaskData;
-
-    float data[] =
-            {
-                    1.0f,  1.0f,  1.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    2.0f,  2.0f,  2.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    3.0f,  3.0f,  3.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    4.0f,  4.0f,  4.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    5.0f,  5.0f,  5.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    6.0f,  6.0f,  6.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    7.0f,  7.0f,  7.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    8.0f,  8.0f,  8.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    9.0f,  9.0f,  9.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    10.0f, 10.0f, 10.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    11.0f, 11.0f, 11.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    12.0f, 12.0f, 12.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    13.0f, 13.0f, 13.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    14.0f, 14.0f, 14.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    15.0f, 15.0f, 15.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    16.0f, 16.0f, 16.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-
-                    1.0f,  1.0f,  1.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    2.0f,  2.0f,  2.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    3.0f,  3.0f,  3.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    4.0f,  4.0f,  4.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    5.0f,  5.0f,  5.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    6.0f,  6.0f,  6.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    7.0f,  7.0f,  7.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    8.0f,  8.0f,  8.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    9.0f,  9.0f,  9.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    10.0f, 10.0f, 10.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    11.0f, 11.0f, 11.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    12.0f, 12.0f, 12.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    13.0f, 13.0f, 13.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    14.0f, 14.0f, 14.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    15.0f, 15.0f, 15.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    16.0f, 16.0f, 16.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-
-                    1.0f,  1.0f,  1.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    2.0f,  2.0f,  2.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    3.0f,  3.0f,  3.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    4.0f,  4.0f,  4.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    5.0f,  5.0f,  5.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    6.0f,  6.0f,  6.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    7.0f,  7.0f,  7.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    8.0f,  8.0f,  8.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    9.0f,  9.0f,  9.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    10.0f, 10.0f, 10.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    11.0f, 11.0f, 11.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    12.0f, 12.0f, 12.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    13.0f, 13.0f, 13.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    14.0f, 14.0f, 14.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    15.0f, 15.0f, 15.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    16.0f, 16.0f, 16.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-
-                    1.0f,  1.0f,  1.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    2.0f,  2.0f,  2.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    3.0f,  3.0f,  3.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    4.0f,  4.0f,  4.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    5.0f,  5.0f,  5.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    6.0f,  6.0f,  6.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    7.0f,  7.0f,  7.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    8.0f,  8.0f,  8.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    9.0f,  9.0f,  9.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    10.0f, 10.0f, 10.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    11.0f, 11.0f, 11.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    12.0f, 12.0f, 12.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    13.0f, 13.0f, 13.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    14.0f, 14.0f, 14.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    15.0f, 15.0f, 15.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    16.0f, 16.0f, 16.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-
-                    1.0f,  1.0f,  1.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    2.0f,  2.0f,  2.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    3.0f,  3.0f,  3.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    4.0f,  4.0f,  4.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    5.0f,  5.0f,  5.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    6.0f,  6.0f,  6.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    7.0f,  7.0f,  7.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    8.0f,  8.0f,  8.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    9.0f,  9.0f,  9.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    10.0f, 10.0f, 10.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    11.0f, 11.0f, 11.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    12.0f, 12.0f, 12.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    13.0f, 13.0f, 13.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    14.0f, 14.0f, 14.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    15.0f, 15.0f, 15.0f, 1.0f, 3.0f, 1.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f,
-                    16.0f, 16.0f, 16.0f, 2.0f, 1.0f, 4.0f, 1.0f, 6.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f
-            };
-
-    float mask[] =
-            {
-                    1.0f, 1.0f, 1.0f,
-                    1.0f, 1.0f, 1.0f,
-                    1.0f, 1.0f, 1.0f,
-
-                    1.0f, 1.0f, 1.0f,
-                    1.0f, 1.0f, 1.0f,
-                    1.0f, 1.0f, 1.0f,
-
-                    1.0f, 1.0f, 1.0f,
-                    1.0f, 1.0f, 1.0f,
-                    1.0f, 1.0f, 1.0f
-            };
-
-    // CHECK CHECK CHECK CHECK CHECK
-    int shared_memory_size = W * W * W;
-    int block_size = TILE_WIDTH * TILE_WIDTH * TILE_WIDTH;
-    int max_size = 3 * block_size;
-    std::cout << "Block Size: " << block_size << " - Shared Memory Size: " << shared_memory_size << " - Max Size: " << max_size << std::endl;
-    std::cout << "SHARED MEMORY SIZE HAS TO BE SMALLER THAN MAX SIZE IN ORDER TO WORK PROPERLY !!!!!!!";
-
-    cudaMalloc((void **)&deviceInputImageData,  image_width * image_height * image_depth * sizeof(float));
-    cudaMalloc((void **)&deviceOutputImageData, image_width * image_height * image_depth * sizeof(float));
-    cudaMalloc((void **)&deviceMaskData,        MASK_WIDTH  * MASK_WIDTH   * MASK_WIDTH  * sizeof(float));
-
-    cudaMemcpy(deviceInputImageData, data, image_width * image_height * image_depth * sizeof(float), cudaMemcpyHostToDevice);
-    cudaMemcpy(deviceMaskData,       mask, MASK_WIDTH  * MASK_WIDTH   * MASK_WIDTH  * sizeof(float), cudaMemcpyHostToDevice);
-
-    dim3 dimBlock(TILE_WIDTH, TILE_WIDTH, TILE_WIDTH);
-    dim3 dimGrid((image_width + TILE_WIDTH - 1) / TILE_WIDTH, (image_height + TILE_WIDTH - 1) / TILE_WIDTH, (image_depth + TILE_WIDTH - 1) / TILE_WIDTH);
-    convolution<<<dimGrid, dimBlock>>>(deviceInputImageData, deviceMaskData, deviceOutputImageData, image_width, image_height, image_depth);
-    cudaDeviceSynchronize();
-
-    cudaMemcpy(data, deviceOutputImageData, image_width * image_height * image_depth * sizeof(float), cudaMemcpyDeviceToHost);
-
-    // Print data
-    for(int i = 0; i < image_width * image_height * image_depth; ++i)
-    {
-        if((i % image_width) == 0)
-            std::cout << std::endl;
-
-        if((i % (image_width * image_height)) == 0)
-            std::cout << std::endl;
-
-        std::cout << data[i] << " - ";
-    }
-
-    cudaFree(deviceInputImageData);
-    cudaFree(deviceOutputImageData);
-    cudaFree(deviceMaskData);
-
-    return 0;
 }

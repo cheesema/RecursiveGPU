@@ -9,9 +9,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 
-
-
-
 ##########################################################################
 # Configure and use submodules
 ##########################################################################
@@ -31,7 +28,8 @@ include_directories(LibAPR/src)
 set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
 set(BUILD_GTEST ON CACHE BOOL "" FORCE)
 set(INSTALL_GTEST OFF CACHE BOOL "" FORCE)
-add_subdirectory("googletest")
+add_subdirectory(googletest)
+include_directories(googletest/googletest/include)
 set(GTEST_LIBRARIES gtest)
 
 # Benchmark LIB
@@ -80,5 +78,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DAPR_BENCHMARK")
 # SRC/BIN for app goes here
 add_executable(benchmark src/main.cpp)
 target_link_libraries(benchmark ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES}  )
+
 add_executable(ConvTest src/ConvTest.cpp src/Conv.cu)
 target_link_libraries(ConvTest ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES} )
+
+add_executable(memBenchmarks src/memBenchmarks.cpp src/memBenchmarks.cu)
+target_link_libraries(memBenchmarks ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES} )

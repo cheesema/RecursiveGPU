@@ -13,6 +13,9 @@
 #include "Conv.h"
 #include "misc/APRTimer.hpp"
 #include "AnalysisData.hpp"
+#include "memBenchmarks.h"
+
+
 AnalysisData ad;
 
 namespace {
