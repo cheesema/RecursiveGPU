@@ -16,6 +16,8 @@ namespace {
         computeConv(f, f, f);
         compute3rdPartyConv(f, f, f);
         compute3rdPartyConv(u16, u16, u16);
+
+        compute3rdParty2DConv(f, f, f);
     }
 
     template<typename T>
@@ -79,13 +81,14 @@ void computeConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &ker
     return;
 }
 
-#define Mask_width  5
+#define Mask_width  3
+#define MASK_WIDTH Mask_width
 #define Mask_radius Mask_width/2
 #define TILE_WIDTH 16
 #define w (TILE_WIDTH + Mask_width - 1)
 #define clamp(x) (min(max((x), 0.0), 1.0))
 // 2D version (?)
-__global__ void convolution(float *I, const float* __restrict__ M, float *P,
+__global__ void convolution2D(float *I, const float* __restrict__ M, float *P,
                             int channels, int width, int height) {
     __shared__ float N_ds[w][w];
     int k;
@@ -126,6 +129,47 @@ __global__ void convolution(float *I, const float* __restrict__ M, float *P,
             P[(y * width + x) * channels + k] = clamp(accum);
         __syncthreads();
     }
+}
+
+template <typename T>
+void compute3rdParty2DConv(const MeshData<T> &in, MeshData<T> &out, const MeshData<T> &kernel) {
+    T *dInput;
+    size_t dataSize = in.mesh.size() * sizeof(T);
+    cudaMalloc(&dInput, dataSize);
+    cudaMemcpy(dInput, in.mesh.get(), dataSize, cudaMemcpyHostToDevice);
+    T *dOutput;
+    cudaMalloc(&dOutput, dataSize);
+    T *dKernel;
+    size_t kernelSize = kernel.mesh.size() * sizeof(T);
+    cudaMalloc(&dKernel, kernelSize);
+    cudaMemcpy(dKernel, kernel.mesh.get(), kernelSize, cudaMemcpyHostToDevice);
+
+    float mask[] =
+            {
+                    1.0f, 1.0f, 1.0f,
+                    1.0f, 1.0f, 1.0f,
+                    1.0f, 1.0f, 1.0f,
+            };
+
+    T *deviceMaskData;
+    cudaMalloc((void **)&deviceMaskData, MASK_WIDTH   * MASK_WIDTH  * sizeof(T));
+    cudaMemcpy(deviceMaskData,       mask, MASK_WIDTH   * MASK_WIDTH  * sizeof(T), cudaMemcpyHostToDevice);
+
+    int image_width = in.y_num;
+    int image_height = in.x_num;
+    int image_depth = in.z_num;
+    dim3 dimBlock(TILE_WIDTH, TILE_WIDTH);
+    dim3 dimGrid((image_width + TILE_WIDTH - 1) / TILE_WIDTH, (image_height + TILE_WIDTH - 1) / TILE_WIDTH);
+    APRTimer timer(true);
+    timer.start_timer("DEVICE CALC 2 ");
+    convolution2D<<<dimGrid, dimBlock>>>(dInput, deviceMaskData, dOutput,1, image_width, image_height);
+    waitForCuda();
+    timer.stop_timer();
+    cudaMemcpy(out.mesh.get(), dOutput, dataSize, cudaMemcpyDeviceToHost);
+
+    cudaFree(deviceMaskData);
+
+    return;
 }
 
 #define     MASK_WIDTH      3

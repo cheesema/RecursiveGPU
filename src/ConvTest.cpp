@@ -51,6 +51,27 @@ namespace {
 //            result.printMesh(3,1);
         }
     }
+
+
+    TEST(ConvolutionTest, 3RD_PARTY_2D) {
+        {
+            APRTimer timer(true);
+            using ImgType = float ;
+            MeshData<ImgType> input = getRandInitializedMesh<ImgType>(3,3,1,1,true);
+            std::cout << input << std::endl;
+//            input.printMesh(3, 1);
+
+            MeshData<ImgType> result(input, false /* don't copy */);
+            MeshData<ImgType> kernel(3,3,1,2);
+
+            timer.start_timer("GpuTimeWithMemTransfer");
+            compute3rdParty2DConv(input, result, kernel);
+            timer.stop_timer();
+
+            input.printMesh(3, 1);
+            result.printMesh(3,1);
+        }
+    }
 }
 
 int main(int argc, char **argv) {
