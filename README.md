@@ -20,4 +20,4 @@ make -j 8
 ```
 ![LocalIntensityScale speedup plot](BenchmarkResults/localIntensityScaleCpuVsGpu.jpg?raw=true)
 ![Recursive Filter speedup plot](BenchmarkResults/recursiveCpuVsGpu.jpg?raw=true)
-
+![Recursive Filter with varying filter length k0](BenchmarkResults/recursiveWithK0changesCpuVsGpu.jpg?raw=true)
