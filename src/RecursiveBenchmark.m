@@ -110,9 +110,9 @@ ylabel('Processing time in seconds');
 print('recursiveCpuVsGpu.eps' ,'-depsc','-painters','-loose','-cmyk');
 print('recursiveCpuVsGpu.jpg' ,'-djpeg','-painters','-loose','-cmyk');
 
--------------------------------------------------------------------------
-Recursive Filter with varying K0 size (fixed img size) plot
--------------------------------------------------------------------------
+% -------------------------------------------------------------------------
+% Recursive Filter with varying K0 size (fixed img size) plot
+% -------------------------------------------------------------------------
 xx=figure(3);
 clf;
 hold on;
@@ -132,7 +132,7 @@ l = legend( { 'TITAN-X GPU 4GB',
 l.Location = 'east';
 l.Box = 'off';
 l.FontSize = 16;      
-title('Recursive Filter (k0=1-64) for image 1024x1024x1024 float (size = 4GB)')
+title('Recursive Filter with filter length k0=1-65')
 set(gcf, 'Position', [2500, 10, 1300, 1100])
 axis([-Inf Inf 0 5.5]);   
 xlabel('k0 - size of filter');
