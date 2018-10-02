@@ -87,7 +87,7 @@ namespace {
                     cudaFilterBsplineFull(mGpu, lambda, tolerance, BSPLINE_ALL_DIR);
                     timer.stop_timer();
                 }
-//                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
+                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.05), 0);
             }
         }
 
@@ -156,7 +156,7 @@ namespace {
                     cudaFilterBsplineFull(mGpu, lambda, tolerance, BSPLINE_ALL_DIR, k0);
                     timer.stop_timer();
                 }
-                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
+                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.05), 0);
             }
         }
 
@@ -225,7 +225,7 @@ namespace {
                     timer.stop_timer();
                 }
 
-                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
+                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.05), 0);
             }
         }
 
@@ -294,7 +294,7 @@ namespace {
                     timer.stop_timer();
                 }
 
-                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.03), 0);
+                EXPECT_EQ(compareMeshes(mCpu, mGpu, 0.05), 0);
             }
         }
 
