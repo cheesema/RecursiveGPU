@@ -10,10 +10,10 @@
 #include <gtest/gtest.h>
 #include "TestTools.hpp"
 
-#include "data_structures/Mesh/MeshData.hpp"
+#include "data_structures/Mesh/PixelData.hpp"
 
 #include "algorithm/ComputeGradient.hpp"
-#include "algorithm/ComputeBsplineRecursiveFilterCuda.h"
+#include "algorithm/ComputeGradientCuda.hpp"
 
 #include "algorithm/LocalIntensityScale.hpp"
 #include "algorithm/LocalIntensityScaleCuda.h"
@@ -64,9 +64,9 @@ namespace {
 
                 std::cout << "\n\n========================= " << d+1 << "/" << numberOfTests << " ===============\n";
                 ad.add_float_data("ticksValue", xLen * zLen * yLen * sizeof(ImgType));
-                MeshData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
+                PixelData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
                 std::cout << "MESH: " << m << std::endl;
-                MeshData<ImgType> mCpu(m, true);
+                PixelData<ImgType> mCpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION CPU: " << i + 1 << "/" << numOfRepetitions << "\n";
                     // Calculate bspline on CPU
@@ -78,7 +78,7 @@ namespace {
                     timer.stop_timer();
                 }
 
-                MeshData<ImgType> mGpu(m, true);
+                PixelData<ImgType> mGpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION GPU: " << i + 1 << "/" << numOfRepetitions << "\n";
 
@@ -133,9 +133,9 @@ namespace {
 
                 std::cout << "\n\n========================= " << d+1 << "/" << numberOfTests << " ===============\n";
                 ad.add_float_data("ticksValue", k0);
-                MeshData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
+                PixelData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
                 std::cout << "MESH: " << m << std::endl;
-                MeshData<ImgType> mCpu(m, true);
+                PixelData<ImgType> mCpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION CPU: " << i + 1 << "/" << numOfRepetitions << "\n";
                     // Calculate bspline on CPU
@@ -147,7 +147,7 @@ namespace {
                     timer.stop_timer();
                 }
 
-                MeshData<ImgType> mGpu(m, true);
+                PixelData<ImgType> mGpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION GPU: " << i + 1 << "/" << numOfRepetitions << "\n";
 
@@ -200,10 +200,10 @@ namespace {
 
                 std::cout << "\n\n========================= " << d+1 << "/" << numberOfTests << " ===============\n";
                 ad.add_float_data("ticksValue", xLen * zLen * yLen * sizeof(ImgType));
-                MeshData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
+                PixelData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
                 std::cout << "MESH: " << m << std::endl;
 
-                MeshData<ImgType> mCpu(m, true);
+                PixelData<ImgType> mCpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION CPU: " << i + 1 << "/" << numOfRepetitions << "\n";
                     // Calculate bspline on CPU
@@ -215,7 +215,7 @@ namespace {
                     timer.stop_timer();
                 }
 
-                MeshData<ImgType> mGpu(m, true);
+                PixelData<ImgType> mGpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION GPU: " << i + 1 << "/" << numOfRepetitions << "\n";
 
@@ -269,10 +269,10 @@ namespace {
 
                 std::cout << "\n\n========================= " << d+1 << "/" << numberOfTests << " ===============\n";
                 ad.add_float_data("ticksValue", xLen * zLen * yLen * sizeof(ImgType));
-                MeshData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
+                PixelData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen);
                 std::cout << "MESH: " << m << std::endl;
 
-                MeshData<ImgType> mCpu(m, true);
+                PixelData<ImgType> mCpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION CPU: " << i + 1 << "/" << numOfRepetitions << "\n";
                     // Calculate bspline on CPU
@@ -284,7 +284,7 @@ namespace {
                     timer.stop_timer();
                 }
 
-                MeshData<ImgType> mGpu(m, true);
+                PixelData<ImgType> mGpu(m, true);
                 for (int i = 0; i < numOfRepetitions; ++i) {
                     std::cout << "<<<<<<<<<<<<<<<<<<< REPETITION GPU: " << i + 1 << "/" << numOfRepetitions << "\n";
 

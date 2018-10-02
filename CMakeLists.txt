@@ -79,8 +79,5 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DAPR_BENCHMARK")
 add_executable(benchmark src/main.cpp)
 target_link_libraries(benchmark ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES}  )
 
-add_executable(ConvTest src/ConvTest.cpp src/Conv.cu)
-target_link_libraries(ConvTest ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES} )
-
-add_executable(memBenchmarks src/memBenchmarks.cpp src/memBenchmarks.cu)
-target_link_libraries(memBenchmarks ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES} )
+# memory test tool
+add_executable(MemTest src/memTest.cu)
