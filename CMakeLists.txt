@@ -48,7 +48,7 @@ else()
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DHAVE_OPENMP ${OpenMP_CXX_FLAGS}")
 endif()
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -pedantic")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -pedantic -fPIC")
 if(CMAKE_COMPILER_IS_GNUCC)
     set(CMAKE_CXX_FLAGS_RELEASE "-O4 -ffast-math")
     set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g")
@@ -67,13 +67,13 @@ endif()
 
 # Setup CUDA
 set(CMAKE_CUDA_STANDARD 14)
-set(CMAKE_CUDA_FLAGS "--cudart shared -g -lineinfo -Xptxas -O3,-v -use_fast_math -DAPR_USE_CUDA")
+set(CMAKE_CUDA_FLAGS "--cudart static -g -lineinfo -Xptxas -O3,-v -use_fast_math -DAPR_USE_CUDA")
 enable_language(CUDA)
 include_directories(${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
 
 # enable BENCHMARK
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DAPR_BENCHMARK")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DAPR_BENCHMARK")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DAPR_BENCHMARK -DAPR_USE_CUDA")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DAPR_BENCHMARK -DAPR_USE_CUDA")
 
 # SRC/BIN for app goes here
 add_executable(benchmark src/main.cpp)
