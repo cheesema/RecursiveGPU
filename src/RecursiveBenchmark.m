@@ -21,6 +21,8 @@ format_figure(xx);
 [~,gTITAN_6]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 0, 1);
 [~,g1080ti_2]=plotDataSimple(['../BenchmarkResults/1080ti/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 0, 1);
 [~,g1080ti_6]=plotDataSimple(['../BenchmarkResults/1080ti/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 0, 1);
+[~,g1080ti2_2]=plotDataSimple(['../BenchmarkResults/1080ti2/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 0, 1);
+[~,g1080ti2_6]=plotDataSimple(['../BenchmarkResults/1080ti2/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 0, 1);
 [cCPU40_2,~]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
 [cCPU40_6,~]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkLocalIntensityScaleTestOffset6.h5'], 1, 0);
 [cCPU10_2,~]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkLocalIntensityScaleTestOffset2.h5'], 1, 0);
@@ -33,6 +35,7 @@ p100speedup_2=round(mean(cCPU_2 ./ gP100_2));
 g1080speedup_2=round(mean(cCPU_2(1:15) ./ g1080_2));
 gTTIANspeedup_2=round(mean(cCPU_2 ./ gTITAN_2));
 g1080tispeedup_2=round(mean(cCPU_2 ./ g1080ti_2));
+g1080ti2speedup_2=round(mean(cCPU_2 ./ g1080ti2_2));
 
 cpu40speedup_2=round(mean(cCPU_2(1:15) ./ cCPU40_2));
 cpu10speedup_2=round(mean(cCPU_2 ./ cCPU10_2));
@@ -42,6 +45,7 @@ p100speedup_6=round(mean(cCPU_6 ./ gP100_6));
 g1080speedup_6=round(mean(cCPU_6(1:15) ./ g1080_6));
 gTTIANspeedup_6=round(mean(cCPU_6 ./ gTITAN_6));
 g1080tispeedup_6=round(mean(cCPU_2 ./ g1080ti_6));
+g1080ti2speedup_6=round(mean(cCPU_2 ./ g1080ti2_6));
 
 cpu40speedup_6=round(mean(cCPU_6(1:15) ./ cCPU40_6));
 cpu10speedup_6=round(mean(cCPU_6 ./ cCPU10_6));
@@ -58,6 +62,8 @@ l = legend( { strcat('v100 off=2 speedup=', num2str(v100speedup_2), 'x'),
               strcat('TITAN X off=6 speedup=', num2str(gTTIANspeedup_6), 'x'),          
               strcat('1080ti X off=2 speedup=', num2str(g1080tispeedup_2), 'x'),
               strcat('1080ti X off=6 speedup=', num2str(g1080tispeedup_6), 'x'),                        
+              strcat('1080ti2 X off=2 speedup=', num2str(g1080ti2speedup_2), 'x'),
+              strcat('1080ti2 X off=6 speedup=', num2str(g1080ti2speedup_6), 'x'),                        
               strcat('40xCPU off=2 speedup=', num2str(cpu40speedup_2), 'x'),
               strcat('40xCPU off=6 speedup=', num2str(cpu40speedup_6), 'x'),
               strcat('10xCPU off=2 speedup=', num2str(cpu10speedup_2), 'x'),
@@ -89,6 +95,7 @@ format_figure(xx);
 [~,g1080_B]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkBsplineTest.h5'], 0, 1);
 [~,gTITAN_B]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkBsplineTest.h5'], 0, 1);
 [~,g1080ti_B]=plotDataSimple(['../BenchmarkResults/1080ti/', 'BenchmarkBsplineTest.h5'], 0, 1);
+[~,g1080ti2_B]=plotDataSimple(['../BenchmarkResults/1080ti2/', 'BenchmarkBsplineTest.h5'], 0, 1);
 
 [cCPU40_B,~]=plotDataSimple(['../BenchmarkResults/Furiosa/', 'BenchmarkBsplineTest.h5'], 1, 0);
 [cCPU10_B,~]=plotDataSimple(['../BenchmarkResults/ParticulatorOpenMP/', 'BenchmarkBsplineTest.h5'], 1, 0);
@@ -99,6 +106,7 @@ p100speedup_B=round(mean(cCPU_B ./ gP100_B));
 g1080speedup_B=round(mean(cCPU_B(1:15) ./ g1080_B));
 gTITANspeedup_B=round(mean(cCPU_B ./ gTITAN_B));
 g1080tispeedup_B=round(mean(cCPU_B ./ g1080ti_B));
+g1080ti2speedup_B=round(mean(cCPU_B ./ g1080ti2_B));
 
 cpu40speedup_B=round(mean(cCPU_B(1:15) ./ cCPU40_B));
 cpu10speedup_B=round(mean(cCPU_B ./ cCPU10_B));
@@ -108,6 +116,7 @@ l = legend( { strcat('v100 speedup=', num2str(v100speedup_B), 'x'),
               strcat('GTX 1080 speedup=', num2str(g1080speedup_B), 'x'),
               strcat('TITAN X speedup=', num2str(gTITANspeedup_B), 'x'),
               strcat('1080ti speedup=', num2str(g1080tispeedup_B), 'x'),
+              strcat('1080ti2 speedup=', num2str(g1080ti2speedup_B), 'x'),
               strcat('40xCPU speedup=', num2str(cpu40speedup_B), 'x'),
               strcat('10xCPU speedup=', num2str(cpu10speedup_B), 'x'),
               strcat('single CPU'),

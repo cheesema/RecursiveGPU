@@ -1,0 +1,2783 @@
+[==========] Running 4 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from BenchmarkBsplineTest
+[ RUN      ] BenchmarkBsplineTest.FULL
+OpenMP reports 20 threads available.
+
+
+========================= 1/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/128/1024 ArrayWrapper: size:134217728 elementSize:4 sizeInBytes:536870912 
+MESH: PixelData: size(Y/X/Z)=1024/128/1024 ArrayWrapper: size:134217728 elementSize:4 sizeInBytes:536870912 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.273380 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.234868 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.235008 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.232583 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.233578 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.011182 seconds
+GpuTimeWithMemTransfer took 1.234792 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.010401 seconds
+GpuTimeWithMemTransfer took 0.162048 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.010270 seconds
+GpuTimeWithMemTransfer took 0.158433 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.010198 seconds
+GpuTimeWithMemTransfer took 0.148990 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.010081 seconds
+GpuTimeWithMemTransfer took 0.148138 seconds
+Number of errors / all points: 0 / 134217728
+
+
+========================= 2/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/256/1024 ArrayWrapper: size:268435456 elementSize:4 sizeInBytes:1073741824 
+MESH: PixelData: size(Y/X/Z)=1024/256/1024 ArrayWrapper: size:268435456 elementSize:4 sizeInBytes:1073741824 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.520841 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.477051 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.477127 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.477024 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.476332 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.020886 seconds
+GpuTimeWithMemTransfer took 0.283500 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.019593 seconds
+GpuTimeWithMemTransfer took 0.296850 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.019661 seconds
+GpuTimeWithMemTransfer took 0.294848 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.019645 seconds
+GpuTimeWithMemTransfer took 0.293915 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.019596 seconds
+GpuTimeWithMemTransfer took 0.293932 seconds
+Number of errors / all points: 0 / 268435456
+
+
+========================= 3/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/384/1024 ArrayWrapper: size:402653184 elementSize:4 sizeInBytes:1610612736 
+MESH: PixelData: size(Y/X/Z)=1024/384/1024 ArrayWrapper: size:402653184 elementSize:4 sizeInBytes:1610612736 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.770902 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.748027 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.747627 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.747188 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.747591 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.028006 seconds
+GpuTimeWithMemTransfer took 0.416684 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.028938 seconds
+GpuTimeWithMemTransfer took 0.439983 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.028944 seconds
+GpuTimeWithMemTransfer took 0.439814 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.029194 seconds
+GpuTimeWithMemTransfer took 0.439855 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.028925 seconds
+GpuTimeWithMemTransfer took 0.440348 seconds
+Number of errors / all points: 0 / 402653184
+
+
+========================= 4/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/512/1024 ArrayWrapper: size:536870912 elementSize:4 sizeInBytes:2147483648 
+MESH: PixelData: size(Y/X/Z)=1024/512/1024 ArrayWrapper: size:536870912 elementSize:4 sizeInBytes:2147483648 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.029966 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.020904 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.022829 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.021745 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.020672 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.037094 seconds
+GpuTimeWithMemTransfer took 0.552108 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.038032 seconds
+GpuTimeWithMemTransfer took 0.585739 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.038105 seconds
+GpuTimeWithMemTransfer took 0.585456 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.038102 seconds
+GpuTimeWithMemTransfer took 0.585327 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.038165 seconds
+GpuTimeWithMemTransfer took 0.585261 seconds
+Number of errors / all points: 0 / 536870912
+
+
+========================= 5/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/640/1024 ArrayWrapper: size:671088640 elementSize:4 sizeInBytes:2684354560 
+MESH: PixelData: size(Y/X/Z)=1024/640/1024 ArrayWrapper: size:671088640 elementSize:4 sizeInBytes:2684354560 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.349015 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.340511 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.340456 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.340494 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.339494 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.046811 seconds
+GpuTimeWithMemTransfer took 0.690862 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.047416 seconds
+GpuTimeWithMemTransfer took 0.733555 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.047525 seconds
+GpuTimeWithMemTransfer took 0.732735 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.047540 seconds
+GpuTimeWithMemTransfer took 0.733052 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.047406 seconds
+GpuTimeWithMemTransfer took 0.732715 seconds
+Number of errors / all points: 0 / 671088640
+
+
+========================= 6/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/768/1024 ArrayWrapper: size:805306368 elementSize:4 sizeInBytes:3221225472 
+MESH: PixelData: size(Y/X/Z)=1024/768/1024 ArrayWrapper: size:805306368 elementSize:4 sizeInBytes:3221225472 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.575726 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.569113 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.568704 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.567955 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.573821 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.055234 seconds
+GpuTimeWithMemTransfer took 0.831193 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.056790 seconds
+GpuTimeWithMemTransfer took 0.881637 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.056966 seconds
+GpuTimeWithMemTransfer took 0.882549 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.056883 seconds
+GpuTimeWithMemTransfer took 0.883005 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.056921 seconds
+GpuTimeWithMemTransfer took 0.881277 seconds
+Number of errors / all points: 0 / 805306368
+
+
+========================= 7/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/896/1024 ArrayWrapper: size:939524096 elementSize:4 sizeInBytes:3758096384 
+MESH: PixelData: size(Y/X/Z)=1024/896/1024 ArrayWrapper: size:939524096 elementSize:4 sizeInBytes:3758096384 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.858465 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.850251 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.850653 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.851114 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.849383 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.061583 seconds
+GpuTimeWithMemTransfer took 0.989210 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.063610 seconds
+GpuTimeWithMemTransfer took 1.023654 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.063830 seconds
+GpuTimeWithMemTransfer took 1.023412 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.063749 seconds
+GpuTimeWithMemTransfer took 1.022874 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.063616 seconds
+GpuTimeWithMemTransfer took 1.023088 seconds
+Number of errors / all points: 0 / 939524096
+
+
+========================= 8/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1024/1024 ArrayWrapper: size:1073741824 elementSize:4 sizeInBytes:4294967296 
+MESH: PixelData: size(Y/X/Z)=1024/1024/1024 ArrayWrapper: size:1073741824 elementSize:4 sizeInBytes:4294967296 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.130580 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.124509 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.121672 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.124155 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.124362 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.070435 seconds
+GpuTimeWithMemTransfer took 1.097582 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.072583 seconds
+GpuTimeWithMemTransfer took 1.168547 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.072687 seconds
+GpuTimeWithMemTransfer took 1.168222 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.072834 seconds
+GpuTimeWithMemTransfer took 1.168585 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.072784 seconds
+GpuTimeWithMemTransfer took 1.168787 seconds
+Number of errors / all points: 0 / 1073741824
+
+
+========================= 9/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1152/1024 ArrayWrapper: size:1207959552 elementSize:4 sizeInBytes:4831838208 
+MESH: PixelData: size(Y/X/Z)=1024/1152/1024 ArrayWrapper: size:1207959552 elementSize:4 sizeInBytes:4831838208 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.403301 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.395561 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.396716 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.396509 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.396278 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.078960 seconds
+GpuTimeWithMemTransfer took 1.255753 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.081521 seconds
+GpuTimeWithMemTransfer took 1.314604 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.081655 seconds
+GpuTimeWithMemTransfer took 1.314831 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.081357 seconds
+GpuTimeWithMemTransfer took 1.313609 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.081553 seconds
+GpuTimeWithMemTransfer took 1.315010 seconds
+Number of errors / all points: 0 / 1207959552
+
+
+========================= 10/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1280/1024 ArrayWrapper: size:1342177280 elementSize:4 sizeInBytes:5368709120 
+MESH: PixelData: size(Y/X/Z)=1024/1280/1024 ArrayWrapper: size:1342177280 elementSize:4 sizeInBytes:5368709120 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.768210 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.761168 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.760339 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.761764 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.760879 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.087765 seconds
+GpuTimeWithMemTransfer took 1.374942 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.090652 seconds
+GpuTimeWithMemTransfer took 1.462122 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.090794 seconds
+GpuTimeWithMemTransfer took 1.462478 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.090392 seconds
+GpuTimeWithMemTransfer took 1.465353 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.090652 seconds
+GpuTimeWithMemTransfer took 1.466917 seconds
+Number of errors / all points: 0 / 1342177280
+
+
+========================= 11/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1408/1024 ArrayWrapper: size:1476395008 elementSize:4 sizeInBytes:5905580032 
+MESH: PixelData: size(Y/X/Z)=1024/1408/1024 ArrayWrapper: size:1476395008 elementSize:4 sizeInBytes:5905580032 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.958126 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.942030 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.945090 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.944942 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.943009 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.096815 seconds
+GpuTimeWithMemTransfer took 1.530555 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.097333 seconds
+GpuTimeWithMemTransfer took 1.652289 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.097173 seconds
+GpuTimeWithMemTransfer took 1.653273 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.097213 seconds
+GpuTimeWithMemTransfer took 1.655524 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.097259 seconds
+GpuTimeWithMemTransfer took 1.648085 seconds
+Number of errors / all points: 0 / 1476395008
+
+
+========================= 12/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1536/1024 ArrayWrapper: size:1610612736 elementSize:4 sizeInBytes:6442450944 
+MESH: PixelData: size(Y/X/Z)=1024/1536/1024 ArrayWrapper: size:1610612736 elementSize:4 sizeInBytes:6442450944 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 3.261070 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 3.229110 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 3.229440 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 3.233827 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 3.229696 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.105676 seconds
+GpuTimeWithMemTransfer took 1.645711 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.106037 seconds
+GpuTimeWithMemTransfer took 1.800967 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.106059 seconds
+GpuTimeWithMemTransfer took 1.807839 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.105561 seconds
+GpuTimeWithMemTransfer took 1.850070 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.105835 seconds
+GpuTimeWithMemTransfer took 1.849422 seconds
+Number of errors / all points: 0 / 1610612736
+
+
+========================= 13/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1664/1024 ArrayWrapper: size:1744830464 elementSize:4 sizeInBytes:6979321856 
+MESH: PixelData: size(Y/X/Z)=1024/1664/1024 ArrayWrapper: size:1744830464 elementSize:4 sizeInBytes:6979321856 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 3.534758 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 3.503235 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 3.505170 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 3.501487 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 3.501341 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.116129 seconds
+GpuTimeWithMemTransfer took 1.782039 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.114502 seconds
+GpuTimeWithMemTransfer took 1.951492 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.114441 seconds
+GpuTimeWithMemTransfer took 1.948303 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.114678 seconds
+GpuTimeWithMemTransfer took 1.947132 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.114631 seconds
+GpuTimeWithMemTransfer took 1.942876 seconds
+Number of errors / all points: 0 / 1744830464
+
+
+========================= 14/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1792/1024 ArrayWrapper: size:1879048192 elementSize:4 sizeInBytes:7516192768 
+MESH: PixelData: size(Y/X/Z)=1024/1792/1024 ArrayWrapper: size:1879048192 elementSize:4 sizeInBytes:7516192768 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 3.825410 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 3.778120 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 3.770131 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 3.775384 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 3.781505 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.122864 seconds
+GpuTimeWithMemTransfer took 1.928476 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.123183 seconds
+GpuTimeWithMemTransfer took 2.105233 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.123132 seconds
+GpuTimeWithMemTransfer took 2.096419 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.122773 seconds
+GpuTimeWithMemTransfer took 2.106164 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.122813 seconds
+GpuTimeWithMemTransfer took 2.157884 seconds
+Number of errors / all points: 0 / 1879048192
+
+
+========================= 15/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1920/1024 ArrayWrapper: size:2013265920 elementSize:4 sizeInBytes:8053063680 
+MESH: PixelData: size(Y/X/Z)=1024/1920/1024 ArrayWrapper: size:2013265920 elementSize:4 sizeInBytes:8053063680 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 4.218009 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 4.179433 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 4.183466 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 4.186221 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 4.182870 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.132575 seconds
+GpuTimeWithMemTransfer took 2.067799 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.132784 seconds
+GpuTimeWithMemTransfer took 2.252995 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.132752 seconds
+GpuTimeWithMemTransfer took 2.313144 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.132409 seconds
+GpuTimeWithMemTransfer took 2.277477 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.132403 seconds
+GpuTimeWithMemTransfer took 2.301935 seconds
+Number of errors / all points: 0 / 2013265920
+
+
+========================= 16/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/2048/1024 ArrayWrapper: size:2147483648 elementSize:4 sizeInBytes:8589934592 
+MESH: PixelData: size(Y/X/Z)=1024/2048/1024 ArrayWrapper: size:2147483648 elementSize:4 sizeInBytes:8589934592 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 4.340692 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 4.318423 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 4.318291 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 4.318232 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 4.326190 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.141296 seconds
+GpuTimeWithMemTransfer took 2.186086 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.141239 seconds
+GpuTimeWithMemTransfer took 2.398543 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.141377 seconds
+GpuTimeWithMemTransfer took 2.401282 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.141517 seconds
+GpuTimeWithMemTransfer took 2.403097 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.141395 seconds
+GpuTimeWithMemTransfer took 2.436518 seconds
+Number of errors / all points: 0 / 2147483648
+Data Analysis File Writing Complete to [BenchmarkBsplineTest.h5] file
+[       OK ] BenchmarkBsplineTest.FULL (541699 ms)
+[ RUN      ] BenchmarkBsplineTest.DIFFERENT_FILTER_SIZE
+OpenMP reports 20 threads available.
+
+
+========================= 1/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.087375 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061057 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059419 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059506 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059435 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=1 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002920 seconds
+GpuTimeWithMemTransfer took 0.048196 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=1 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002887 seconds
+GpuTimeWithMemTransfer took 0.043128 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=1 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002923 seconds
+GpuTimeWithMemTransfer took 0.042914 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=1 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002912 seconds
+GpuTimeWithMemTransfer took 0.043009 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=1 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002891 seconds
+GpuTimeWithMemTransfer took 0.042965 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 2/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.068077 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061155 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059955 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059086 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059433 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=2 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002910 seconds
+GpuTimeWithMemTransfer took 0.039534 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=2 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002882 seconds
+GpuTimeWithMemTransfer took 0.039347 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=2 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002909 seconds
+GpuTimeWithMemTransfer took 0.039376 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=2 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002884 seconds
+GpuTimeWithMemTransfer took 0.039375 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=2 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002896 seconds
+GpuTimeWithMemTransfer took 0.039368 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 3/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.069606 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061001 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059828 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059172 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059330 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=3 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002925 seconds
+GpuTimeWithMemTransfer took 0.039796 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=3 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002959 seconds
+GpuTimeWithMemTransfer took 0.039571 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=3 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002905 seconds
+GpuTimeWithMemTransfer took 0.039342 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=3 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002905 seconds
+GpuTimeWithMemTransfer took 0.039377 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=3 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002913 seconds
+GpuTimeWithMemTransfer took 0.039454 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 4/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.068846 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061499 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059930 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059227 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059445 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=4 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002915 seconds
+GpuTimeWithMemTransfer took 0.039735 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=4 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002918 seconds
+GpuTimeWithMemTransfer took 0.039464 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=4 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002914 seconds
+GpuTimeWithMemTransfer took 0.039421 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=4 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002894 seconds
+GpuTimeWithMemTransfer took 0.039405 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=4 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002855 seconds
+GpuTimeWithMemTransfer took 0.039372 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 5/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.067781 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061206 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060167 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059358 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059387 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=5 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002894 seconds
+GpuTimeWithMemTransfer took 0.039495 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=5 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002899 seconds
+GpuTimeWithMemTransfer took 0.039553 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=5 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002897 seconds
+GpuTimeWithMemTransfer took 0.039595 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=5 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002934 seconds
+GpuTimeWithMemTransfer took 0.039832 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=5 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002883 seconds
+GpuTimeWithMemTransfer took 0.039779 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 6/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.069960 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061120 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059856 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059376 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059240 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=6 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002887 seconds
+GpuTimeWithMemTransfer took 0.039560 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=6 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002919 seconds
+GpuTimeWithMemTransfer took 0.039509 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=6 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002856 seconds
+GpuTimeWithMemTransfer took 0.039428 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=6 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002895 seconds
+GpuTimeWithMemTransfer took 0.039437 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=6 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002848 seconds
+GpuTimeWithMemTransfer took 0.039333 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 7/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070497 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061557 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060125 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059715 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059400 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=7 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002830 seconds
+GpuTimeWithMemTransfer took 0.039558 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=7 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002941 seconds
+GpuTimeWithMemTransfer took 0.039601 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=7 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002916 seconds
+GpuTimeWithMemTransfer took 0.039482 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=7 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002905 seconds
+GpuTimeWithMemTransfer took 0.039458 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=7 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002910 seconds
+GpuTimeWithMemTransfer took 0.039400 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 8/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070159 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061241 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059840 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059310 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059497 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=8 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002837 seconds
+GpuTimeWithMemTransfer took 0.039600 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=8 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002911 seconds
+GpuTimeWithMemTransfer took 0.039405 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=8 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002921 seconds
+GpuTimeWithMemTransfer took 0.039474 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=8 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002878 seconds
+GpuTimeWithMemTransfer took 0.039399 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=8 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002934 seconds
+GpuTimeWithMemTransfer took 0.039445 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 9/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.069450 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061212 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059995 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059325 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059560 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=9 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002943 seconds
+GpuTimeWithMemTransfer took 0.039610 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=9 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002954 seconds
+GpuTimeWithMemTransfer took 0.039509 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=9 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002957 seconds
+GpuTimeWithMemTransfer took 0.039561 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=9 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002949 seconds
+GpuTimeWithMemTransfer took 0.039497 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=9 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002948 seconds
+GpuTimeWithMemTransfer took 0.039489 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 10/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070710 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061631 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060010 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059343 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059644 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=10 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002942 seconds
+GpuTimeWithMemTransfer took 0.039651 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=10 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002947 seconds
+GpuTimeWithMemTransfer took 0.039466 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=10 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002945 seconds
+GpuTimeWithMemTransfer took 0.039509 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=10 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002937 seconds
+GpuTimeWithMemTransfer took 0.039433 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=10 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002934 seconds
+GpuTimeWithMemTransfer took 0.039387 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 11/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070318 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062026 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060119 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059867 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059761 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=11 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002952 seconds
+GpuTimeWithMemTransfer took 0.039635 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=11 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002953 seconds
+GpuTimeWithMemTransfer took 0.039481 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=11 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002906 seconds
+GpuTimeWithMemTransfer took 0.039504 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=11 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002990 seconds
+GpuTimeWithMemTransfer took 0.039693 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=11 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002944 seconds
+GpuTimeWithMemTransfer took 0.039543 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 12/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.069733 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062008 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060037 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059151 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059447 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=12 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002939 seconds
+GpuTimeWithMemTransfer took 0.039786 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=12 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002986 seconds
+GpuTimeWithMemTransfer took 0.039560 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=12 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002949 seconds
+GpuTimeWithMemTransfer took 0.039485 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=12 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002955 seconds
+GpuTimeWithMemTransfer took 0.039601 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=12 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002949 seconds
+GpuTimeWithMemTransfer took 0.039559 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 13/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070987 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061807 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059919 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059899 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059598 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=13 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002953 seconds
+GpuTimeWithMemTransfer took 0.039949 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=13 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002946 seconds
+GpuTimeWithMemTransfer took 0.039710 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=13 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002925 seconds
+GpuTimeWithMemTransfer took 0.040020 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=13 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002949 seconds
+GpuTimeWithMemTransfer took 0.040132 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=13 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002899 seconds
+GpuTimeWithMemTransfer took 0.039880 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 14/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071107 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062012 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060239 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059635 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059459 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=14 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002948 seconds
+GpuTimeWithMemTransfer took 0.039917 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=14 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002946 seconds
+GpuTimeWithMemTransfer took 0.039714 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=14 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002927 seconds
+GpuTimeWithMemTransfer took 0.039540 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=14 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002948 seconds
+GpuTimeWithMemTransfer took 0.039646 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=14 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002957 seconds
+GpuTimeWithMemTransfer took 0.039714 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 15/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070578 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061401 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059778 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059469 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059748 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=15 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002973 seconds
+GpuTimeWithMemTransfer took 0.040072 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=15 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002970 seconds
+GpuTimeWithMemTransfer took 0.039997 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=15 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002871 seconds
+GpuTimeWithMemTransfer took 0.039770 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=15 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002917 seconds
+GpuTimeWithMemTransfer took 0.039838 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=15 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002968 seconds
+GpuTimeWithMemTransfer took 0.039806 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 16/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.068477 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061637 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060015 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059725 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059643 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=16 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002945 seconds
+GpuTimeWithMemTransfer took 0.040145 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=16 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002940 seconds
+GpuTimeWithMemTransfer took 0.039564 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=16 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002926 seconds
+GpuTimeWithMemTransfer took 0.039534 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=16 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002934 seconds
+GpuTimeWithMemTransfer took 0.039575 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=16 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002921 seconds
+GpuTimeWithMemTransfer took 0.039537 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 17/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.069222 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061423 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059969 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059543 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059578 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=17 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003036 seconds
+GpuTimeWithMemTransfer took 0.040195 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=17 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002985 seconds
+GpuTimeWithMemTransfer took 0.039792 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=17 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002962 seconds
+GpuTimeWithMemTransfer took 0.039831 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=17 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003007 seconds
+GpuTimeWithMemTransfer took 0.039903 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=17 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002989 seconds
+GpuTimeWithMemTransfer took 0.039693 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 18/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071724 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062244 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060250 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059368 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059691 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002988 seconds
+GpuTimeWithMemTransfer took 0.039829 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003021 seconds
+GpuTimeWithMemTransfer took 0.039744 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002981 seconds
+GpuTimeWithMemTransfer took 0.039951 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002988 seconds
+GpuTimeWithMemTransfer took 0.039888 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=18 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002985 seconds
+GpuTimeWithMemTransfer took 0.039692 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 19/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070118 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061690 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059782 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059544 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059631 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=19 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003005 seconds
+GpuTimeWithMemTransfer took 0.039755 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=19 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002991 seconds
+GpuTimeWithMemTransfer took 0.039601 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=19 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002980 seconds
+GpuTimeWithMemTransfer took 0.039570 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=19 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003004 seconds
+GpuTimeWithMemTransfer took 0.039678 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=19 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002996 seconds
+GpuTimeWithMemTransfer took 0.039616 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 20/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070702 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061918 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060164 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059626 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059480 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=20 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002989 seconds
+GpuTimeWithMemTransfer took 0.039769 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=20 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002973 seconds
+GpuTimeWithMemTransfer took 0.039682 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=20 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002996 seconds
+GpuTimeWithMemTransfer took 0.039663 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=20 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002970 seconds
+GpuTimeWithMemTransfer took 0.039580 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=20 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002972 seconds
+GpuTimeWithMemTransfer took 0.039618 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 21/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071305 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061506 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060073 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059498 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059561 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=21 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003000 seconds
+GpuTimeWithMemTransfer took 0.039761 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=21 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002994 seconds
+GpuTimeWithMemTransfer took 0.039630 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=21 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002985 seconds
+GpuTimeWithMemTransfer took 0.039616 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=21 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003031 seconds
+GpuTimeWithMemTransfer took 0.039720 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=21 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002985 seconds
+GpuTimeWithMemTransfer took 0.039582 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 22/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071075 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062024 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060132 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059796 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.060099 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=22 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002964 seconds
+GpuTimeWithMemTransfer took 0.039846 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=22 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003019 seconds
+GpuTimeWithMemTransfer took 0.039679 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=22 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002975 seconds
+GpuTimeWithMemTransfer took 0.039632 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=22 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002906 seconds
+GpuTimeWithMemTransfer took 0.039695 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=22 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002968 seconds
+GpuTimeWithMemTransfer took 0.039686 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 23/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070778 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062646 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060071 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059709 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059787 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=23 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002998 seconds
+GpuTimeWithMemTransfer took 0.039811 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=23 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002973 seconds
+GpuTimeWithMemTransfer took 0.039587 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=23 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002989 seconds
+GpuTimeWithMemTransfer took 0.039573 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=23 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002981 seconds
+GpuTimeWithMemTransfer took 0.039557 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=23 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003010 seconds
+GpuTimeWithMemTransfer took 0.039734 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 24/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071157 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062292 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060244 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059637 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.060121 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=24 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002953 seconds
+GpuTimeWithMemTransfer took 0.040020 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=24 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002951 seconds
+GpuTimeWithMemTransfer took 0.039843 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=24 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003029 seconds
+GpuTimeWithMemTransfer took 0.039769 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=24 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003022 seconds
+GpuTimeWithMemTransfer took 0.039627 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=24 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003012 seconds
+GpuTimeWithMemTransfer took 0.039686 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 25/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071703 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062338 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060231 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.060024 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059796 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=25 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003040 seconds
+GpuTimeWithMemTransfer took 0.039871 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=25 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003037 seconds
+GpuTimeWithMemTransfer took 0.039734 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=25 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003025 seconds
+GpuTimeWithMemTransfer took 0.039717 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=25 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003034 seconds
+GpuTimeWithMemTransfer took 0.039657 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=25 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003004 seconds
+GpuTimeWithMemTransfer took 0.039787 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 26/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.069953 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061681 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060035 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059778 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059773 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=26 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003040 seconds
+GpuTimeWithMemTransfer took 0.039940 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=26 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003033 seconds
+GpuTimeWithMemTransfer took 0.040087 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=26 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003113 seconds
+GpuTimeWithMemTransfer took 0.040361 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=26 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003033 seconds
+GpuTimeWithMemTransfer took 0.040118 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=26 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003042 seconds
+GpuTimeWithMemTransfer took 0.040069 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 27/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070535 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062429 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059954 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059740 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.060151 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=27 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003045 seconds
+GpuTimeWithMemTransfer took 0.040018 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=27 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003034 seconds
+GpuTimeWithMemTransfer took 0.040080 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=27 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003024 seconds
+GpuTimeWithMemTransfer took 0.039872 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=27 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003010 seconds
+GpuTimeWithMemTransfer took 0.039974 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=27 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003050 seconds
+GpuTimeWithMemTransfer took 0.040194 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 28/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070866 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062151 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060068 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059752 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059680 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=28 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003053 seconds
+GpuTimeWithMemTransfer took 0.040209 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=28 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003031 seconds
+GpuTimeWithMemTransfer took 0.039953 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=28 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003034 seconds
+GpuTimeWithMemTransfer took 0.040042 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=28 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003055 seconds
+GpuTimeWithMemTransfer took 0.040055 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=28 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003034 seconds
+GpuTimeWithMemTransfer took 0.039977 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 29/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.070880 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062791 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059889 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059631 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059634 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=29 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003068 seconds
+GpuTimeWithMemTransfer took 0.039952 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=29 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003077 seconds
+GpuTimeWithMemTransfer took 0.039863 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=29 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002975 seconds
+GpuTimeWithMemTransfer took 0.039791 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=29 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003034 seconds
+GpuTimeWithMemTransfer took 0.039781 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=29 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002986 seconds
+GpuTimeWithMemTransfer took 0.039716 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 30/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071402 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061782 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060021 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059631 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059748 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=30 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003080 seconds
+GpuTimeWithMemTransfer took 0.040011 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=30 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003066 seconds
+GpuTimeWithMemTransfer took 0.039962 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=30 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003085 seconds
+GpuTimeWithMemTransfer took 0.040052 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=30 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003066 seconds
+GpuTimeWithMemTransfer took 0.040189 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=30 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003072 seconds
+GpuTimeWithMemTransfer took 0.039924 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 31/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071178 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062064 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.059951 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059665 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.060070 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=31 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003052 seconds
+GpuTimeWithMemTransfer took 0.039947 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=31 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003064 seconds
+GpuTimeWithMemTransfer took 0.039917 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=31 norm_factor=0.113831
+GpuDeviceTimeFull took 0.002981 seconds
+GpuTimeWithMemTransfer took 0.039793 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=31 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003061 seconds
+GpuTimeWithMemTransfer took 0.039882 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=31 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003058 seconds
+GpuTimeWithMemTransfer took 0.040182 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 32/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.071408 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.062558 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060424 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059793 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059781 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=32 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003046 seconds
+GpuTimeWithMemTransfer took 0.040136 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=32 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003082 seconds
+GpuTimeWithMemTransfer took 0.040380 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=32 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003029 seconds
+GpuTimeWithMemTransfer took 0.040305 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=32 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003126 seconds
+GpuTimeWithMemTransfer took 0.040495 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=32 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003113 seconds
+GpuTimeWithMemTransfer took 0.040318 seconds
+Number of errors / all points: 0 / 33554432
+
+
+========================= 33/33 ===============
+Mesh info: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+MESH: PixelData: size(Y/X/Z)=256/512/256 ArrayWrapper: size:33554432 elementSize:4 sizeInBytes:134217728 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.068959 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.061608 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.060020 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.059532 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.059711 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=33 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003103 seconds
+GpuTimeWithMemTransfer took 0.040032 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=33 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003102 seconds
+GpuTimeWithMemTransfer took 0.040071 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=33 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003069 seconds
+GpuTimeWithMemTransfer took 0.039867 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=33 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003052 seconds
+GpuTimeWithMemTransfer took 0.039912 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GPU: xi=1214.68 rho=0.584374 omg=0.537232 gamma=0.824071 b1=1.0041 b2=-0.341493 k0=33 norm_factor=0.113831
+GpuDeviceTimeFull took 0.003107 seconds
+GpuTimeWithMemTransfer took 0.039968 seconds
+Number of errors / all points: 0 / 33554432
+Data Analysis File Writing Complete to [BenchmarkBsplineVsK0sizeTest.h5] file
+[       OK ] BenchmarkBsplineTest.DIFFERENT_FILTER_SIZE (32884 ms)
+[----------] 2 tests from BenchmarkBsplineTest (574583 ms total)
+
+[----------] 2 tests from BenchmarkLocalIntensityScaleTest
+[ RUN      ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_2
+OpenMP reports 20 threads available.
+
+
+========================= 1/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/128/1024 ArrayWrapper: size:134217728 elementSize:4 sizeInBytes:536870912 
+MESH: PixelData: size(Y/X/Z)=1024/128/1024 ArrayWrapper: size:134217728 elementSize:4 sizeInBytes:536870912 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.140230 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.140151 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.140241 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.140136 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.140002 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.121868 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.134039 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.133167 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.133156 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.133139 seconds
+Number of errors / all points: 0 / 134217728
+
+
+========================= 2/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/256/1024 ArrayWrapper: size:268435456 elementSize:4 sizeInBytes:1073741824 
+MESH: PixelData: size(Y/X/Z)=1024/256/1024 ArrayWrapper: size:268435456 elementSize:4 sizeInBytes:1073741824 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.280074 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.279722 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.279841 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.280215 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.280289 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.246229 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.269319 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.267290 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.266426 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.266239 seconds
+Number of errors / all points: 0 / 268435456
+
+
+========================= 3/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/384/1024 ArrayWrapper: size:402653184 elementSize:4 sizeInBytes:1610612736 
+MESH: PixelData: size(Y/X/Z)=1024/384/1024 ArrayWrapper: size:402653184 elementSize:4 sizeInBytes:1610612736 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.420093 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.420881 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.421088 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.420818 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.420900 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 0.365648 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.399116 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.398360 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.398364 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.398386 seconds
+Number of errors / all points: 0 / 402653184
+
+
+========================= 4/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/512/1024 ArrayWrapper: size:536870912 elementSize:4 sizeInBytes:2147483648 
+MESH: PixelData: size(Y/X/Z)=1024/512/1024 ArrayWrapper: size:536870912 elementSize:4 sizeInBytes:2147483648 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.561827 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.562183 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.561059 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.560989 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.561995 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.488302 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.535136 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.532813 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.532954 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.533006 seconds
+Number of errors / all points: 0 / 536870912
+
+
+========================= 5/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/640/1024 ArrayWrapper: size:671088640 elementSize:4 sizeInBytes:2684354560 
+MESH: PixelData: size(Y/X/Z)=1024/640/1024 ArrayWrapper: size:671088640 elementSize:4 sizeInBytes:2684354560 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.708092 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.708395 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.708458 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.707139 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.707137 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 0.609879 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000030 seconds
+GpuTimeWithMemTransfer took 0.665145 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.665130 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.667833 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.667603 seconds
+Number of errors / all points: 0 / 671088640
+
+
+========================= 6/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/768/1024 ArrayWrapper: size:805306368 elementSize:4 sizeInBytes:3221225472 
+MESH: PixelData: size(Y/X/Z)=1024/768/1024 ArrayWrapper: size:805306368 elementSize:4 sizeInBytes:3221225472 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.841992 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.842244 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.841831 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.841313 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.841624 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.734586 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.798080 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.801701 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.801693 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.800009 seconds
+Number of errors / all points: 0 / 805306368
+
+
+========================= 7/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/896/1024 ArrayWrapper: size:939524096 elementSize:4 sizeInBytes:3758096384 
+MESH: PixelData: size(Y/X/Z)=1024/896/1024 ArrayWrapper: size:939524096 elementSize:4 sizeInBytes:3758096384 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.982210 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.981804 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.981458 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.982059 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.981654 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.856124 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.932454 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.931447 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.930578 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.931112 seconds
+Number of errors / all points: 0 / 939524096
+
+
+========================= 8/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1024/1024 ArrayWrapper: size:1073741824 elementSize:4 sizeInBytes:4294967296 
+MESH: PixelData: size(Y/X/Z)=1024/1024/1024 ArrayWrapper: size:1073741824 elementSize:4 sizeInBytes:4294967296 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.121940 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.121590 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.122317 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.121577 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.121801 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000038 seconds
+GpuTimeWithMemTransfer took 0.978970 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 1.062893 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.062565 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.064837 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 1.063785 seconds
+Number of errors / all points: 0 / 1073741824
+
+
+========================= 9/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1152/1024 ArrayWrapper: size:1207959552 elementSize:4 sizeInBytes:4831838208 
+MESH: PixelData: size(Y/X/Z)=1024/1152/1024 ArrayWrapper: size:1207959552 elementSize:4 sizeInBytes:4831838208 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.263396 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.263565 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.263128 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.263504 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.263770 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.102581 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.198095 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.198622 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 1.199030 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 1.200071 seconds
+Number of errors / all points: 0 / 1207959552
+
+
+========================= 10/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1280/1024 ArrayWrapper: size:1342177280 elementSize:4 sizeInBytes:5368709120 
+MESH: PixelData: size(Y/X/Z)=1024/1280/1024 ArrayWrapper: size:1342177280 elementSize:4 sizeInBytes:5368709120 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.414485 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.413962 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.416742 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.414774 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.414730 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.237731 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.336278 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.337002 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.336751 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 1.336034 seconds
+Number of errors / all points: 0 / 1342177280
+
+
+========================= 11/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1408/1024 ArrayWrapper: size:1476395008 elementSize:4 sizeInBytes:5905580032 
+MESH: PixelData: size(Y/X/Z)=1024/1408/1024 ArrayWrapper: size:1476395008 elementSize:4 sizeInBytes:5905580032 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.543543 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.542844 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.541669 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.541198 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.542604 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.352640 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.524537 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000038 seconds
+GpuTimeWithMemTransfer took 1.569139 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000036 seconds
+GpuTimeWithMemTransfer took 1.517113 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.514195 seconds
+Number of errors / all points: 0 / 1476395008
+
+
+========================= 12/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1536/1024 ArrayWrapper: size:1610612736 elementSize:4 sizeInBytes:6442450944 
+MESH: PixelData: size(Y/X/Z)=1024/1536/1024 ArrayWrapper: size:1610612736 elementSize:4 sizeInBytes:6442450944 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.684825 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.683308 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.683860 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.681763 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.681708 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.484017 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.653637 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.646427 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.642635 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.620921 seconds
+Number of errors / all points: 0 / 1610612736
+
+
+========================= 13/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1664/1024 ArrayWrapper: size:1744830464 elementSize:4 sizeInBytes:6979321856 
+MESH: PixelData: size(Y/X/Z)=1024/1664/1024 ArrayWrapper: size:1744830464 elementSize:4 sizeInBytes:6979321856 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.821308 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.821372 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.822829 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.821074 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.822211 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.604547 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.794789 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.770136 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.794829 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.762333 seconds
+Number of errors / all points: 0 / 1744830464
+
+
+========================= 14/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1792/1024 ArrayWrapper: size:1879048192 elementSize:4 sizeInBytes:7516192768 
+MESH: PixelData: size(Y/X/Z)=1024/1792/1024 ArrayWrapper: size:1879048192 elementSize:4 sizeInBytes:7516192768 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.965475 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.962013 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.965523 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.960967 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.962816 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000036 seconds
+GpuTimeWithMemTransfer took 1.721265 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.925827 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.931674 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.938025 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.904488 seconds
+Number of errors / all points: 0 / 1879048192
+
+
+========================= 15/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1920/1024 ArrayWrapper: size:2013265920 elementSize:4 sizeInBytes:8053063680 
+MESH: PixelData: size(Y/X/Z)=1024/1920/1024 ArrayWrapper: size:2013265920 elementSize:4 sizeInBytes:8053063680 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.120433 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.119620 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.119756 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.121384 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.121171 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000044 seconds
+GpuTimeWithMemTransfer took 1.851768 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 2.055659 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.056907 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.057404 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.058753 seconds
+Number of errors / all points: 0 / 2013265920
+
+
+========================= 16/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/2048/1024 ArrayWrapper: size:2147483648 elementSize:4 sizeInBytes:8589934592 
+MESH: PixelData: size(Y/X/Z)=1024/2048/1024 ArrayWrapper: size:2147483648 elementSize:4 sizeInBytes:8589934592 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.244091 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.240243 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.240873 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.241214 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.243506 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.965420 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 2.168299 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 2.198330 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.256246 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 2.204491 seconds
+Number of errors / all points: 0 / 2147483648
+Data Analysis File Writing Complete to [BenchmarkLocalIntensityScaleTestOffset2.h5] file
+[       OK ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_2 (446007 ms)
+[ RUN      ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_6
+OpenMP reports 20 threads available.
+
+
+========================= 1/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/128/1024 ArrayWrapper: size:134217728 elementSize:4 sizeInBytes:536870912 
+MESH: PixelData: size(Y/X/Z)=1024/128/1024 ArrayWrapper: size:134217728 elementSize:4 sizeInBytes:536870912 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.146032 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.140896 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.140851 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.140806 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.140872 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.128783 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.135209 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.135343 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.135487 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.135744 seconds
+Number of errors / all points: 0 / 134217728
+
+
+========================= 2/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/256/1024 ArrayWrapper: size:268435456 elementSize:4 sizeInBytes:1073741824 
+MESH: PixelData: size(Y/X/Z)=1024/256/1024 ArrayWrapper: size:268435456 elementSize:4 sizeInBytes:1073741824 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.281313 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.281004 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.281103 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.280674 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.281010 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.248747 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.270645 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.270612 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.270878 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.270675 seconds
+Number of errors / all points: 0 / 268435456
+
+
+========================= 3/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/384/1024 ArrayWrapper: size:402653184 elementSize:4 sizeInBytes:1610612736 
+MESH: PixelData: size(Y/X/Z)=1024/384/1024 ArrayWrapper: size:402653184 elementSize:4 sizeInBytes:1610612736 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.422573 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.422552 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.422313 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.421970 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.422241 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.372849 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.404973 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.405036 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.405333 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.404990 seconds
+Number of errors / all points: 0 / 402653184
+
+
+========================= 4/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/512/1024 ArrayWrapper: size:536870912 elementSize:4 sizeInBytes:2147483648 
+MESH: PixelData: size(Y/X/Z)=1024/512/1024 ArrayWrapper: size:536870912 elementSize:4 sizeInBytes:2147483648 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.563628 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.564218 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.563994 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.563485 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.563728 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.498501 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.542434 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.540793 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.541062 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.539952 seconds
+Number of errors / all points: 0 / 536870912
+
+
+========================= 5/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/640/1024 ArrayWrapper: size:671088640 elementSize:4 sizeInBytes:2684354560 
+MESH: PixelData: size(Y/X/Z)=1024/640/1024 ArrayWrapper: size:671088640 elementSize:4 sizeInBytes:2684354560 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.757234 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.764915 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.756091 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.758939 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.762008 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.621387 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.675440 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.675401 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.675297 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.675456 seconds
+Number of errors / all points: 0 / 671088640
+
+
+========================= 6/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/768/1024 ArrayWrapper: size:805306368 elementSize:4 sizeInBytes:3221225472 
+MESH: PixelData: size(Y/X/Z)=1024/768/1024 ArrayWrapper: size:805306368 elementSize:4 sizeInBytes:3221225472 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.844966 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.844906 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.845062 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.845377 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.844822 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 0.744783 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.809613 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.811294 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.811606 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 0.810196 seconds
+Number of errors / all points: 0 / 805306368
+
+
+========================= 7/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/896/1024 ArrayWrapper: size:939524096 elementSize:4 sizeInBytes:3758096384 
+MESH: PixelData: size(Y/X/Z)=1024/896/1024 ArrayWrapper: size:939524096 elementSize:4 sizeInBytes:3758096384 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 0.986597 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 0.985891 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 0.986032 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 0.985448 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 0.985700 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.875190 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.949369 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 0.947556 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.948181 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 0.947663 seconds
+Number of errors / all points: 0 / 939524096
+
+
+========================= 8/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1024/1024 ArrayWrapper: size:1073741824 elementSize:4 sizeInBytes:4294967296 
+MESH: PixelData: size(Y/X/Z)=1024/1024/1024 ArrayWrapper: size:1073741824 elementSize:4 sizeInBytes:4294967296 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.127749 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.125969 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.126244 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.126194 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.125280 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 0.994044 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.080216 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.080046 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.080022 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.080281 seconds
+Number of errors / all points: 0 / 1073741824
+
+
+========================= 9/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1152/1024 ArrayWrapper: size:1207959552 elementSize:4 sizeInBytes:4831838208 
+MESH: PixelData: size(Y/X/Z)=1024/1152/1024 ArrayWrapper: size:1207959552 elementSize:4 sizeInBytes:4831838208 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.266132 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.268774 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.266488 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.267212 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.269926 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.126168 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 1.216953 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000031 seconds
+GpuTimeWithMemTransfer took 1.216712 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.215855 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.217523 seconds
+Number of errors / all points: 0 / 1207959552
+
+
+========================= 10/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1280/1024 ArrayWrapper: size:1342177280 elementSize:4 sizeInBytes:5368709120 
+MESH: PixelData: size(Y/X/Z)=1024/1280/1024 ArrayWrapper: size:1342177280 elementSize:4 sizeInBytes:5368709120 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.475948 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.473433 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.483414 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.477457 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.477639 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000036 seconds
+GpuTimeWithMemTransfer took 1.245902 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.361350 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.354670 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.353862 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000032 seconds
+GpuTimeWithMemTransfer took 1.354466 seconds
+Number of errors / all points: 0 / 1342177280
+
+
+========================= 11/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1408/1024 ArrayWrapper: size:1476395008 elementSize:4 sizeInBytes:5905580032 
+MESH: PixelData: size(Y/X/Z)=1024/1408/1024 ArrayWrapper: size:1476395008 elementSize:4 sizeInBytes:5905580032 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.549580 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.548842 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.551950 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.550734 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.550323 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.378105 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.538603 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.542242 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000042 seconds
+GpuTimeWithMemTransfer took 1.542215 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.542831 seconds
+Number of errors / all points: 0 / 1476395008
+
+
+========================= 12/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1536/1024 ArrayWrapper: size:1610612736 elementSize:4 sizeInBytes:6442450944 
+MESH: PixelData: size(Y/X/Z)=1024/1536/1024 ArrayWrapper: size:1610612736 elementSize:4 sizeInBytes:6442450944 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.691061 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.688939 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.689215 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.689549 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.688936 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.497821 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.680392 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.679312 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.677038 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.685303 seconds
+Number of errors / all points: 0 / 1610612736
+
+
+========================= 13/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1664/1024 ArrayWrapper: size:1744830464 elementSize:4 sizeInBytes:6979321856 
+MESH: PixelData: size(Y/X/Z)=1024/1664/1024 ArrayWrapper: size:1744830464 elementSize:4 sizeInBytes:6979321856 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.834612 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.832018 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.832675 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.832623 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.833423 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.628064 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.821847 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 1.821427 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.818039 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000036 seconds
+GpuTimeWithMemTransfer took 1.815586 seconds
+Number of errors / all points: 0 / 1744830464
+
+
+========================= 14/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1792/1024 ArrayWrapper: size:1879048192 elementSize:4 sizeInBytes:7516192768 
+MESH: PixelData: size(Y/X/Z)=1024/1792/1024 ArrayWrapper: size:1879048192 elementSize:4 sizeInBytes:7516192768 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 1.971711 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 1.968257 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 1.968754 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 1.968892 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 1.967324 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.753981 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.958020 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.955747 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.961669 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 1.956257 seconds
+Number of errors / all points: 0 / 1879048192
+
+
+========================= 15/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/1920/1024 ArrayWrapper: size:2013265920 elementSize:4 sizeInBytes:8053063680 
+MESH: PixelData: size(Y/X/Z)=1024/1920/1024 ArrayWrapper: size:2013265920 elementSize:4 sizeInBytes:8053063680 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.193864 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.191408 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.192755 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.192270 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.189831 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 1.882689 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 2.094596 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 2.093763 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.104003 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000034 seconds
+GpuTimeWithMemTransfer took 2.097865 seconds
+Number of errors / all points: 0 / 2013265920
+
+
+========================= 16/16 ===============
+Mesh info: PixelData: size(Y/X/Z)=1024/2048/1024 ArrayWrapper: size:2147483648 elementSize:4 sizeInBytes:8589934592 
+MESH: PixelData: size(Y/X/Z)=1024/2048/1024 ArrayWrapper: size:2147483648 elementSize:4 sizeInBytes:8589934592 
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 1/5
+CpuTime took 2.256137 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 2/5
+CpuTime took 2.255395 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 3/5
+CpuTime took 2.254646 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 4/5
+CpuTime took 2.254300 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION CPU: 5/5
+CpuTime took 2.254191 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 1/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.004592 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 2/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.232375 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 3/5
+GpuDeviceTimeFull took 0.000036 seconds
+GpuTimeWithMemTransfer took 2.227523 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 4/5
+GpuDeviceTimeFull took 0.000035 seconds
+GpuTimeWithMemTransfer took 2.238261 seconds
+<<<<<<<<<<<<<<<<<<< REPETITION GPU: 5/5
+GpuDeviceTimeFull took 0.000033 seconds
+GpuTimeWithMemTransfer took 2.217720 seconds
+Number of errors / all points: 0 / 2147483648
+Data Analysis File Writing Complete to [BenchmarkLocalIntensityScaleTestOffset6.h5] file
+[       OK ] BenchmarkLocalIntensityScaleTest.FULL_OFFSET_6 (447123 ms)
+[----------] 2 tests from BenchmarkLocalIntensityScaleTest (893130 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 2 test cases ran. (1467713 ms total)
+[  PASSED  ] 4 tests.
