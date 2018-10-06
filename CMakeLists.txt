@@ -76,7 +76,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DAPR_BENCHMARK -DAPR_USE_CUDA")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DAPR_BENCHMARK -DAPR_USE_CUDA")
 
 # SRC/BIN for app goes here
-add_executable(benchmark src/main.cpp)
+add_executable(benchmark src/main.cpp src/recursiveFilter.cu)
 target_link_libraries(benchmark ${APR_LIB} ${GTEST_LIBRARIES} ${HDF5_LIBRARIES}  )
 
 # memory test tool

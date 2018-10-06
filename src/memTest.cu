@@ -1,4 +1,5 @@
 #include <cuda_runtime.h>
+#include <cuda.h>
 #include <device_launch_parameters.h>
 #include <iostream>
 #include <chrono>
@@ -22,23 +23,42 @@ __global__ void memCopy2dA(const T *in, T *out, size_t xLen, size_t yLen) {
     }
 }
 
-template<typename T>
+template<typename T, bool SHOW_TIMINGS=false>
 __global__ void memCopy2dB(const T *in, T *out, size_t xLen, size_t yLen) {
+    uint64_t  start, stop;
     size_t xi = blockIdx.x * blockDim.x + threadIdx.x;
     if (xi < xLen) {
+        __syncthreads();
+        start = clock64();
         for (size_t idx = xi; idx < yLen * xLen; idx += xLen) {
             __syncthreads(); // don't need sychronization but it gives super speedup!
             out[idx] = in[idx];
         }
+        stop = clock64();
+    }
+    if (SHOW_TIMINGS) {
+        if (threadIdx.x % 32 == 0 && blockIdx.x == 1) {
+            printf("time from thread %5d: %ld - %ld\n", threadIdx.x, start, stop);
+        }
     }
 }
 
-template<typename T>
+template<typename T, bool SHOW_TIMINGS=false>
 __global__ void memCopy2dBnotSynchronized(const T *in, T *out, size_t xLen, size_t yLen) {
+    uint64_t  start, stop;
     size_t xi = blockIdx.x * blockDim.x + threadIdx.x;
     if (xi < xLen) {
+        __syncthreads();
+        start = clock64();
         for (size_t idx = xi; idx < yLen * xLen; idx += xLen) {
             out[idx] = in[idx];
+        }
+        stop = clock64();
+    }
+
+    if (SHOW_TIMINGS) {
+        if (threadIdx.x % 32 == 0 && blockIdx.x == 1) {
+            printf("time from thread %5d: %ld - %ld\n", threadIdx.x, start, stop);
         }
     }
 }
@@ -127,7 +147,7 @@ void test2DB(int numOfRepetitions, int numOfThreads, size_t xLen, size_t yLen, T
     {
         ScopedBandwidth sb("test2DB", dataSize, numOfRepetitions);
         for (int i = 0; i < numOfRepetitions; ++i) {
-            memCopy2dB <<< numBlocks, threadsPerBlock >>> (dInput, dOutput, xLen, yLen);
+            memCopy2dB <T, true> <<< numBlocks, threadsPerBlock >>> (dInput, dOutput, xLen, yLen);
         }
         waitForCuda();
     }
@@ -144,7 +164,7 @@ void test2DBnotSynchronized(int numOfRepetitions, int numOfThreads, size_t xLen,
     {
         ScopedBandwidth sb("test2DBnotSynchronized", dataSize, numOfRepetitions);
         for (int i = 0; i < numOfRepetitions; ++i) {
-            memCopy2dBnotSynchronized <<< numBlocks, threadsPerBlock >>> (dInput, dOutput, xLen, yLen);
+            memCopy2dBnotSynchronized <T, true> <<< numBlocks, threadsPerBlock >>> (dInput, dOutput, xLen, yLen);
         }
         waitForCuda();
     }
@@ -206,7 +226,7 @@ int main() {
     T *dOutput;
     cudaMalloc(&dOutput, dataSize);
 
-    const int numOfRepetitions = 50;
+    const int numOfRepetitions = 10;
 
     warmUp(numOfRepetitions, 64, xLen, yLen, dInput, dOutput);
 
