@@ -226,13 +226,21 @@ void filterZeroBoundary(PixelData<ImgType> &input, TypeOfRecRecursiveFlags flags
 
     ScopedCudaMemHandler<PixelData<ImgType>, D2H | H2D> cudaInput(input);
 
+for (int i = 0; i < 100; ++i) {
     APRTimer timer(true);
     timer.start_timer("GpuDeviceTimeFull");
+    APRTimer timerY(true);timerY.start_timer("Ydir");
     if (flags & RECURSIVE_Y_DIR) {
         runBsplineYdir(cudaInput.get(), input.x_num, input.y_num, input.z_num, -0.5,0.5, 1, aStream);
     }
+    cudaDeviceSynchronize();
+    timerY.stop_timer();
+    APRTimer timerX(true);timerX.start_timer("Xdir");
     if (flags & RECURSIVE_X_DIR) {
         runBsplineXdir(cudaInput.get(), input.x_num, input.y_num, input.z_num, -0.5,0.5, 1, aStream);
     }
+    cudaDeviceSynchronize();
+    timerX.stop_timer();
     timer.stop_timer();
+}
 }

@@ -30,13 +30,12 @@ namespace {
 
     TEST(BenchmarkBsplineTest, ZERO) {
         using ImgType = float;
-        size_t yLen = 16182;
-        size_t xLen = 16184;
+        size_t yLen = 1024*16*1;
+        size_t xLen = 1024*16*1;
         size_t zLen = 1;
 
         PixelData<ImgType> m = getRandInitializedMesh<ImgType>(yLen, xLen, zLen, 1, true);
 //        m.printMeshT(6, 2);
-        for (int i = 0; i < 10; ++i)
         filterZeroBoundary(m, RECURSIVE_ALL_DIR);
 //        m.printMeshT(6, 2);
     }
